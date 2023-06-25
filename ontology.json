@@ -1,0 +1,595 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#hasBenefit"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#HealthBenefit"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#constitutes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#constitutes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#constitutes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#hasIngredient"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Ingredient"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#hasNutrient"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Nutrient"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#isPopularFor"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#PopularFlavor"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#isPreparedThrough"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#PreparationStep"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@value" : "4-8%"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#fatPercentage"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@value" : "32-42%"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#snfPercentage"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#constitutes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#constitutes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#AlternativeSweetener",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AlternativeSweetener"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://gelatontology.com/#Ingredient"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#BasicIngredient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BasicIngredient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://gelatontology.com/#Ingredient"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#Gelato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#HealthBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HealthBenefit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#Ingredient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ingredient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#NaturalFlavor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NaturalFlavor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://gelatontology.com/#Ingredient"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#Nutrient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Nutrient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#PopularFlavor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PopularFlavor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#PreparationStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PreparationStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#Stabilizer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Stabilizer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://gelatontology.com/#Ingredient"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#addColorAndFlavor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "addColorAndFlavor"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#aging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://gelatontology.com/#needsDuration" : [ {
+    "@value" : "24 hours"
+  } ],
+  "http://gelatontology.com/#needsTemperature" : [ {
+    "@value" : "4°C"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "aging"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#alcohol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#NaturalFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "alcohol"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#antioxidant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#Nutrient" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "antioxidant"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#antioxidantBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#HealthBenefit" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "antioxidantBenefit"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#banana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PopularFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "banana"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#batchFreezing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "batchFreezing"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#blending",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "blending"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#calciumSourceBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#HealthBenefit" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "calciumSourceBenefit"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#carrageenan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#Stabilizer" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "carrageenan"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#chili",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PopularFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "chili"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#chocolate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PopularFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "chocolate"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#cocoaNib",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#NaturalFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cocoa nib"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#cocoaPowder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#NaturalFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cocoa powder"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#constitutes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "constitutes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#cooling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://gelatontology.com/#needsTemperature" : [ {
+    "@value" : "below 4°C"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cooling"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#custard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PopularFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "custard"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#darkChocolate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PopularFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "darkChocolate"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#digestiveHealthBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#HealthBenefit" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "digestiveHealthBenefit"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#eggYolk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#BasicIngredient" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "eggYolk"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#erythritol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#AlternativeSweetener" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "erythritol"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#fatPercentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fatPercentage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#freshCream",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#BasicIngredient" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "freshCream"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#fruit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#NaturalFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fruit"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#guarGum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#Stabilizer" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "guarGum"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#hasBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasBenefit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#hasIngredient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasIngredient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#hasNutrient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasNutrient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#homogenization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://gelatontology.com/#needsPressure" : [ {
+    "@value" : "2000-2500 psi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "homogenization"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#honey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#AlternativeSweetener" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "honey"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#hydrationBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#HealthBenefit" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hydrationBenefit"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#isPopularFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isPopularFor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#isPreparedThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isPreparedThrough"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#lemon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PopularFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lemon"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#locustBeanGum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#Stabilizer" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "locustBeanGum"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#milk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#BasicIngredient" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "milk"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#mixPreparation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mixPreparation"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#needsDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://gelatontology.com/#PreparationStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "needsDuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#needsPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://gelatontology.com/#PreparationStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "needsPressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#needsTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://gelatontology.com/#PreparationStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "needsTemperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#pasteurization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://gelatontology.com/#needsTemperature" : [ {
+    "@value" : "63-77°C"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pasteurization"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#peach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PopularFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "peach"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#pectin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#Stabilizer" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pectin"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#phenolicCompound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#Nutrient" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "phenolicCompound"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#skimmedMilkPowder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#BasicIngredient" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "skimmedMilkPowder"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#snfPercentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "snfPercentage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#spice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#NaturalFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "spice"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#storage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "storage"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#strawberry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PopularFlavor" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "strawberry"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#sugar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#BasicIngredient" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "sugar"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#trehalose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#AlternativeSweetener" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "trehalose"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#vitaminC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#Nutrient" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "vitaminC"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#vitaminCBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#HealthBenefit" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "vitaminCBenefit"
+  } ]
+}, {
+  "@id" : "urn:webprotege:ontology:0da27253-9ff9-49c6-976a-f6807e6336aa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+} ]

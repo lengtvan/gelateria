@@ -1,0 +1,735 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://gelatontology.com/", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "urn:webprotege:ontology:0da27253-9ff9-49c6-976a-f6807e6336aa"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://gelatontology.com/#PopularFlavor",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PopularFlavor",
+      "undefined" : "PopularFlavor"
+    },
+    "individuals" : [ {
+      "iri" : "http://gelatontology.com/#custard",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "custard",
+        "undefined" : "custard"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#peach",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "peach",
+        "undefined" : "peach"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#darkChocolate",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "darkChocolate",
+        "undefined" : "darkChocolate"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#lemon",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "lemon",
+        "undefined" : "lemon"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#strawberry",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "strawberry",
+        "undefined" : "strawberry"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#chili",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "chili",
+        "undefined" : "chili"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#banana",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "banana",
+        "undefined" : "banana"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#chocolate",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "chocolate",
+        "undefined" : "chocolate"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://gelatontology.com/#NaturalFlavor",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NaturalFlavor",
+      "undefined" : "NaturalFlavor"
+    },
+    "individuals" : [ {
+      "iri" : "http://gelatontology.com/#cocoaPowder",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "cocoaPowder",
+        "undefined" : "cocoa powder"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#spice",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "spice",
+        "undefined" : "spice"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#fruit",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "fruit",
+        "undefined" : "fruit"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#alcohol",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "alcohol",
+        "undefined" : "alcohol"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#cocoaNib",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "cocoaNib",
+        "undefined" : "cocoa nib"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://gelatontology.com/#AlternativeSweetener",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AlternativeSweetener",
+      "undefined" : "AlternativeSweetener"
+    },
+    "individuals" : [ {
+      "iri" : "http://gelatontology.com/#erythritol",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "erythritol",
+        "undefined" : "erythritol"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#trehalose",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "trehalose",
+        "undefined" : "trehalose"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#honey",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "honey",
+        "undefined" : "honey"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://gelatontology.com/#PreparationStep",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PreparationStep",
+      "undefined" : "PreparationStep"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://gelatontology.com/#Nutrient",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nutrient",
+      "undefined" : "Nutrient"
+    },
+    "individuals" : [ {
+      "iri" : "http://gelatontology.com/#vitaminC",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "vitaminC",
+        "undefined" : "vitaminC"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#antioxidant",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "antioxidant",
+        "undefined" : "antioxidant"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#phenolicCompound",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "phenolicCompound",
+        "undefined" : "phenolicCompound"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://gelatontology.com/#Stabilizer",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Stabilizer",
+      "undefined" : "Stabilizer"
+    },
+    "individuals" : [ {
+      "iri" : "http://gelatontology.com/#locustBeanGum",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "locustBeanGum",
+        "undefined" : "locustBeanGum"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#carrageenan",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "carrageenan",
+        "undefined" : "carrageenan"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#pectin",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "pectin",
+        "undefined" : "pectin"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#guarGum",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "guarGum",
+        "undefined" : "guarGum"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://gelatontology.com/#HealthBenefit",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HealthBenefit",
+      "undefined" : "HealthBenefit"
+    },
+    "individuals" : [ {
+      "iri" : "http://gelatontology.com/#vitaminCBenefit",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "vitaminCBenefit",
+        "undefined" : "vitaminCBenefit"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#calciumSourceBenefit",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "calciumSourceBenefit",
+        "undefined" : "calciumSourceBenefit"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#hydrationBenefit",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "hydrationBenefit",
+        "undefined" : "hydrationBenefit"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#digestiveHealthBenefit",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "digestiveHealthBenefit",
+        "undefined" : "digestiveHealthBenefit"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#antioxidantBenefit",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "antioxidantBenefit",
+        "undefined" : "antioxidantBenefit"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://gelatontology.com/#BasicIngredient",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BasicIngredient",
+      "undefined" : "BasicIngredient"
+    },
+    "individuals" : [ {
+      "iri" : "http://gelatontology.com/#freshCream",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "freshCream",
+        "undefined" : "freshCream"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#eggYolk",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "eggYolk",
+        "undefined" : "eggYolk"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#skimmedMilkPowder",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "skimmedMilkPowder",
+        "undefined" : "skimmedMilkPowder"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#sugar",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "sugar",
+        "undefined" : "sugar"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#milk",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "milk",
+        "undefined" : "milk"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://gelatontology.com/#Ingredient",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ingredient",
+      "undefined" : "Ingredient"
+    },
+    "subClasses" : [ "30", "1", "28", "9" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://gelatontology.com/#Gelato",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gelato",
+      "undefined" : "Gelato"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "7",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "8",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "10",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "11",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "12",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "14",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "15",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "27",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://gelatontology.com/#hasBenefit",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasBenefit",
+      "undefined" : "hasBenefit"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://gelatontology.com/#hasIngredient",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasIngredient",
+      "undefined" : "hasIngredient"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://gelatontology.com/#isPopularFor",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "isPopularFor",
+      "undefined" : "isPopularFor"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://gelatontology.com/#constitutes",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "constitutes",
+      "undefined" : "constitutes"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "5",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://gelatontology.com/#constitutes",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "constitutes",
+      "undefined" : "constitutes"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "2",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://gelatontology.com/#constitutes",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "constitutes",
+      "undefined" : "constitutes"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "13",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://gelatontology.com/#constitutes",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "constitutes",
+      "undefined" : "constitutes"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "0",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://gelatontology.com/#constitutes",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "constitutes",
+      "undefined" : "constitutes"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "16",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://gelatontology.com/#needsDuration",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "needsDuration",
+      "undefined" : "needsDuration"
+    },
+    "domain" : "16",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "19",
+    "subproperty" : [ "20", "21", "22", "23", "24", "25" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://gelatontology.com/#hasNutrient",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasNutrient",
+      "undefined" : "hasNutrient"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://gelatontology.com/#isPreparedThrough",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "isPreparedThrough",
+      "undefined" : "isPreparedThrough"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "2",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://gelatontology.com/#snfPercentage",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "snfPercentage",
+      "undefined" : "snfPercentage"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://gelatontology.com/#needsPressure",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "needsPressure",
+      "undefined" : "needsPressure"
+    },
+    "domain" : "16",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://gelatontology.com/#needsTemperature",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "needsTemperature",
+      "undefined" : "needsTemperature"
+    },
+    "domain" : "16",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "35"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "2",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "39"
+  }, {
+    "range" : "2",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://gelatontology.com/#fatPercentage",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "fatPercentage",
+      "undefined" : "fatPercentage"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "42"
+  } ]
+}

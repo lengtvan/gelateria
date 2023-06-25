@@ -1,0 +1,396 @@
+<urn:webprotege:ontology:0da27253-9ff9-49c6-976a-f6807e6336aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://gelatontology.com/#constitutes
+<http://gelatontology.com/#constitutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gelatontology.com/#constitutes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://gelatontology.com/#constitutes> <http://www.w3.org/2000/01/rdf-schema#label> "constitutes" .
+# 
+# http://gelatontology.com/#hasBenefit
+<http://gelatontology.com/#hasBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gelatontology.com/#hasBenefit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://gelatontology.com/#hasBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "hasBenefit" .
+# 
+# http://gelatontology.com/#hasIngredient
+<http://gelatontology.com/#hasIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gelatontology.com/#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://gelatontology.com/#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#label> "hasIngredient" .
+# 
+# http://gelatontology.com/#hasNutrient
+<http://gelatontology.com/#hasNutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gelatontology.com/#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://gelatontology.com/#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#label> "hasNutrient" .
+# 
+# http://gelatontology.com/#isPopularFor
+<http://gelatontology.com/#isPopularFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gelatontology.com/#isPopularFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://gelatontology.com/#isPopularFor> <http://www.w3.org/2000/01/rdf-schema#label> "isPopularFor" .
+# 
+# http://gelatontology.com/#isPreparedThrough
+<http://gelatontology.com/#isPreparedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gelatontology.com/#isPreparedThrough> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://gelatontology.com/#isPreparedThrough> <http://www.w3.org/2000/01/rdf-schema#label> "isPreparedThrough" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://gelatontology.com/#fatPercentage
+<http://gelatontology.com/#fatPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://gelatontology.com/#fatPercentage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://gelatontology.com/#fatPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#fatPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "fatPercentage" .
+# 
+# http://gelatontology.com/#needsDuration
+<http://gelatontology.com/#needsDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://gelatontology.com/#needsDuration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://gelatontology.com/#needsDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gelatontology.com/#PreparationStep> .
+<http://gelatontology.com/#needsDuration> <http://www.w3.org/2000/01/rdf-schema#label> "needsDuration" .
+# 
+# http://gelatontology.com/#needsPressure
+<http://gelatontology.com/#needsPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://gelatontology.com/#needsPressure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://gelatontology.com/#needsPressure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gelatontology.com/#PreparationStep> .
+<http://gelatontology.com/#needsPressure> <http://www.w3.org/2000/01/rdf-schema#label> "needsPressure" .
+# 
+# http://gelatontology.com/#needsTemperature
+<http://gelatontology.com/#needsTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://gelatontology.com/#needsTemperature> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://gelatontology.com/#needsTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gelatontology.com/#PreparationStep> .
+<http://gelatontology.com/#needsTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "needsTemperature" .
+# 
+# http://gelatontology.com/#snfPercentage
+<http://gelatontology.com/#snfPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://gelatontology.com/#snfPercentage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://gelatontology.com/#snfPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#snfPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "snfPercentage" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://gelatontology.com/#AlternativeSweetener
+<http://gelatontology.com/#AlternativeSweetener> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#AlternativeSweetener> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gelatontology.com/#Ingredient> .
+<http://gelatontology.com/#AlternativeSweetener> <http://www.w3.org/2000/01/rdf-schema#label> "AlternativeSweetener" .
+# 
+# http://gelatontology.com/#BasicIngredient
+<http://gelatontology.com/#BasicIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#BasicIngredient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gelatontology.com/#Ingredient> .
+<http://gelatontology.com/#BasicIngredient> <http://www.w3.org/2000/01/rdf-schema#label> "BasicIngredient" .
+# 
+# http://gelatontology.com/#Gelato
+<http://gelatontology.com/#Gelato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasBenefit> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#HealthBenefit> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasIngredient> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Ingredient> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasNutrient> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Nutrient> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#isPopularFor> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#PopularFlavor> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#isPreparedThrough> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#PreparationStep> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#fatPercentage> .
+_:genid6 <http://www.w3.org/2002/07/owl#hasValue> "4-8%" .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#snfPercentage> .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> "32-42%" .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#label> "Gelato" .
+# 
+# http://gelatontology.com/#HealthBenefit
+<http://gelatontology.com/#HealthBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#HealthBenefit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#HealthBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "HealthBenefit" .
+# 
+# http://gelatontology.com/#Ingredient
+<http://gelatontology.com/#Ingredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#Ingredient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#Ingredient> <http://www.w3.org/2000/01/rdf-schema#label> "Ingredient" .
+# 
+# http://gelatontology.com/#NaturalFlavor
+<http://gelatontology.com/#NaturalFlavor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#NaturalFlavor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gelatontology.com/#Ingredient> .
+<http://gelatontology.com/#NaturalFlavor> <http://www.w3.org/2000/01/rdf-schema#label> "NaturalFlavor" .
+# 
+# http://gelatontology.com/#Nutrient
+<http://gelatontology.com/#Nutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#Nutrient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#Nutrient> <http://www.w3.org/2000/01/rdf-schema#label> "Nutrient" .
+# 
+# http://gelatontology.com/#PopularFlavor
+<http://gelatontology.com/#PopularFlavor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#PopularFlavor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#PopularFlavor> <http://www.w3.org/2000/01/rdf-schema#label> "PopularFlavor" .
+# 
+# http://gelatontology.com/#PreparationStep
+<http://gelatontology.com/#PreparationStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#PreparationStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#PreparationStep> <http://www.w3.org/2000/01/rdf-schema#label> "PreparationStep" .
+# 
+# http://gelatontology.com/#Stabilizer
+<http://gelatontology.com/#Stabilizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#Stabilizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gelatontology.com/#Ingredient> .
+<http://gelatontology.com/#Stabilizer> <http://www.w3.org/2000/01/rdf-schema#label> "Stabilizer" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://gelatontology.com/#addColorAndFlavor
+<http://gelatontology.com/#addColorAndFlavor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#addColorAndFlavor> <http://www.w3.org/2000/01/rdf-schema#label> "addColorAndFlavor" .
+# 
+# http://gelatontology.com/#aging
+<http://gelatontology.com/#aging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#aging> <http://gelatontology.com/#needsDuration> "24 hours" .
+<http://gelatontology.com/#aging> <http://gelatontology.com/#needsTemperature> "4°C" .
+<http://gelatontology.com/#aging> <http://www.w3.org/2000/01/rdf-schema#label> "aging" .
+# 
+# http://gelatontology.com/#alcohol
+<http://gelatontology.com/#alcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#alcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#NaturalFlavor> .
+<http://gelatontology.com/#alcohol> <http://www.w3.org/2000/01/rdf-schema#label> "alcohol" .
+# 
+# http://gelatontology.com/#antioxidant
+<http://gelatontology.com/#antioxidant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#antioxidant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#Nutrient> .
+<http://gelatontology.com/#antioxidant> <http://www.w3.org/2000/01/rdf-schema#label> "antioxidant" .
+# 
+# http://gelatontology.com/#antioxidantBenefit
+<http://gelatontology.com/#antioxidantBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#antioxidantBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#HealthBenefit> .
+<http://gelatontology.com/#antioxidantBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "antioxidantBenefit" .
+# 
+# http://gelatontology.com/#banana
+<http://gelatontology.com/#banana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#banana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PopularFlavor> .
+<http://gelatontology.com/#banana> <http://www.w3.org/2000/01/rdf-schema#label> "banana" .
+# 
+# http://gelatontology.com/#batchFreezing
+<http://gelatontology.com/#batchFreezing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#batchFreezing> <http://www.w3.org/2000/01/rdf-schema#label> "batchFreezing" .
+# 
+# http://gelatontology.com/#blending
+<http://gelatontology.com/#blending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#blending> <http://www.w3.org/2000/01/rdf-schema#label> "blending" .
+# 
+# http://gelatontology.com/#calciumSourceBenefit
+<http://gelatontology.com/#calciumSourceBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#calciumSourceBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#HealthBenefit> .
+<http://gelatontology.com/#calciumSourceBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "calciumSourceBenefit" .
+# 
+# http://gelatontology.com/#carrageenan
+<http://gelatontology.com/#carrageenan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#carrageenan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#Stabilizer> .
+<http://gelatontology.com/#carrageenan> <http://www.w3.org/2000/01/rdf-schema#label> "carrageenan" .
+# 
+# http://gelatontology.com/#chili
+<http://gelatontology.com/#chili> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#chili> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PopularFlavor> .
+<http://gelatontology.com/#chili> <http://www.w3.org/2000/01/rdf-schema#label> "chili" .
+# 
+# http://gelatontology.com/#chocolate
+<http://gelatontology.com/#chocolate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#chocolate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PopularFlavor> .
+<http://gelatontology.com/#chocolate> <http://www.w3.org/2000/01/rdf-schema#label> "chocolate" .
+# 
+# http://gelatontology.com/#cocoaNib
+<http://gelatontology.com/#cocoaNib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#cocoaNib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#NaturalFlavor> .
+<http://gelatontology.com/#cocoaNib> <http://www.w3.org/2000/01/rdf-schema#label> "cocoa nib" .
+# 
+# http://gelatontology.com/#cocoaPowder
+<http://gelatontology.com/#cocoaPowder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#cocoaPowder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#NaturalFlavor> .
+<http://gelatontology.com/#cocoaPowder> <http://www.w3.org/2000/01/rdf-schema#label> "cocoa powder" .
+# 
+# http://gelatontology.com/#cooling
+<http://gelatontology.com/#cooling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#cooling> <http://gelatontology.com/#needsTemperature> "below 4°C" .
+<http://gelatontology.com/#cooling> <http://www.w3.org/2000/01/rdf-schema#label> "cooling" .
+# 
+# http://gelatontology.com/#custard
+<http://gelatontology.com/#custard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#custard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PopularFlavor> .
+<http://gelatontology.com/#custard> <http://www.w3.org/2000/01/rdf-schema#label> "custard" .
+# 
+# http://gelatontology.com/#darkChocolate
+<http://gelatontology.com/#darkChocolate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#darkChocolate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PopularFlavor> .
+<http://gelatontology.com/#darkChocolate> <http://www.w3.org/2000/01/rdf-schema#label> "darkChocolate" .
+# 
+# http://gelatontology.com/#digestiveHealthBenefit
+<http://gelatontology.com/#digestiveHealthBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#digestiveHealthBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#HealthBenefit> .
+<http://gelatontology.com/#digestiveHealthBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "digestiveHealthBenefit" .
+# 
+# http://gelatontology.com/#eggYolk
+<http://gelatontology.com/#eggYolk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#eggYolk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#BasicIngredient> .
+<http://gelatontology.com/#eggYolk> <http://www.w3.org/2000/01/rdf-schema#label> "eggYolk" .
+# 
+# http://gelatontology.com/#erythritol
+<http://gelatontology.com/#erythritol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#erythritol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#AlternativeSweetener> .
+<http://gelatontology.com/#erythritol> <http://www.w3.org/2000/01/rdf-schema#label> "erythritol" .
+# 
+# http://gelatontology.com/#freshCream
+<http://gelatontology.com/#freshCream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#freshCream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#BasicIngredient> .
+<http://gelatontology.com/#freshCream> <http://www.w3.org/2000/01/rdf-schema#label> "freshCream" .
+# 
+# http://gelatontology.com/#fruit
+<http://gelatontology.com/#fruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#fruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#NaturalFlavor> .
+<http://gelatontology.com/#fruit> <http://www.w3.org/2000/01/rdf-schema#label> "fruit" .
+# 
+# http://gelatontology.com/#guarGum
+<http://gelatontology.com/#guarGum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#guarGum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#Stabilizer> .
+<http://gelatontology.com/#guarGum> <http://www.w3.org/2000/01/rdf-schema#label> "guarGum" .
+# 
+# http://gelatontology.com/#homogenization
+<http://gelatontology.com/#homogenization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#homogenization> <http://gelatontology.com/#needsPressure> "2000-2500 psi" .
+<http://gelatontology.com/#homogenization> <http://www.w3.org/2000/01/rdf-schema#label> "homogenization" .
+# 
+# http://gelatontology.com/#honey
+<http://gelatontology.com/#honey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#honey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#AlternativeSweetener> .
+<http://gelatontology.com/#honey> <http://www.w3.org/2000/01/rdf-schema#label> "honey" .
+# 
+# http://gelatontology.com/#hydrationBenefit
+<http://gelatontology.com/#hydrationBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#hydrationBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#HealthBenefit> .
+<http://gelatontology.com/#hydrationBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "hydrationBenefit" .
+# 
+# http://gelatontology.com/#lemon
+<http://gelatontology.com/#lemon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#lemon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PopularFlavor> .
+<http://gelatontology.com/#lemon> <http://www.w3.org/2000/01/rdf-schema#label> "lemon" .
+# 
+# http://gelatontology.com/#locustBeanGum
+<http://gelatontology.com/#locustBeanGum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#locustBeanGum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#Stabilizer> .
+<http://gelatontology.com/#locustBeanGum> <http://www.w3.org/2000/01/rdf-schema#label> "locustBeanGum" .
+# 
+# http://gelatontology.com/#milk
+<http://gelatontology.com/#milk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#milk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#BasicIngredient> .
+<http://gelatontology.com/#milk> <http://www.w3.org/2000/01/rdf-schema#label> "milk" .
+# 
+# http://gelatontology.com/#mixPreparation
+<http://gelatontology.com/#mixPreparation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#mixPreparation> <http://www.w3.org/2000/01/rdf-schema#label> "mixPreparation" .
+# 
+# http://gelatontology.com/#pasteurization
+<http://gelatontology.com/#pasteurization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#pasteurization> <http://gelatontology.com/#needsTemperature> "63-77°C" .
+<http://gelatontology.com/#pasteurization> <http://www.w3.org/2000/01/rdf-schema#label> "pasteurization" .
+# 
+# http://gelatontology.com/#peach
+<http://gelatontology.com/#peach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#peach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PopularFlavor> .
+<http://gelatontology.com/#peach> <http://www.w3.org/2000/01/rdf-schema#label> "peach" .
+# 
+# http://gelatontology.com/#pectin
+<http://gelatontology.com/#pectin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#pectin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#Stabilizer> .
+<http://gelatontology.com/#pectin> <http://www.w3.org/2000/01/rdf-schema#label> "pectin" .
+# 
+# http://gelatontology.com/#phenolicCompound
+<http://gelatontology.com/#phenolicCompound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#phenolicCompound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#Nutrient> .
+<http://gelatontology.com/#phenolicCompound> <http://www.w3.org/2000/01/rdf-schema#label> "phenolicCompound" .
+# 
+# http://gelatontology.com/#skimmedMilkPowder
+<http://gelatontology.com/#skimmedMilkPowder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#skimmedMilkPowder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#BasicIngredient> .
+<http://gelatontology.com/#skimmedMilkPowder> <http://www.w3.org/2000/01/rdf-schema#label> "skimmedMilkPowder" .
+# 
+# http://gelatontology.com/#spice
+<http://gelatontology.com/#spice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#spice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#NaturalFlavor> .
+<http://gelatontology.com/#spice> <http://www.w3.org/2000/01/rdf-schema#label> "spice" .
+# 
+# http://gelatontology.com/#storage
+<http://gelatontology.com/#storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#storage> <http://www.w3.org/2000/01/rdf-schema#label> "storage" .
+# 
+# http://gelatontology.com/#strawberry
+<http://gelatontology.com/#strawberry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#strawberry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PopularFlavor> .
+<http://gelatontology.com/#strawberry> <http://www.w3.org/2000/01/rdf-schema#label> "strawberry" .
+# 
+# http://gelatontology.com/#sugar
+<http://gelatontology.com/#sugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#sugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#BasicIngredient> .
+<http://gelatontology.com/#sugar> <http://www.w3.org/2000/01/rdf-schema#label> "sugar" .
+# 
+# http://gelatontology.com/#trehalose
+<http://gelatontology.com/#trehalose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#trehalose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#AlternativeSweetener> .
+<http://gelatontology.com/#trehalose> <http://www.w3.org/2000/01/rdf-schema#label> "trehalose" .
+# 
+# http://gelatontology.com/#vitaminC
+<http://gelatontology.com/#vitaminC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#vitaminC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#Nutrient> .
+<http://gelatontology.com/#vitaminC> <http://www.w3.org/2000/01/rdf-schema#label> "vitaminC" .
+# 
+# http://gelatontology.com/#vitaminCBenefit
+<http://gelatontology.com/#vitaminCBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#vitaminCBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#HealthBenefit> .
+<http://gelatontology.com/#vitaminCBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "vitaminCBenefit" .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
