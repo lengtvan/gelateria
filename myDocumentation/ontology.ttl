@@ -198,12 +198,14 @@
 #################################################################
 
 ###  http://gelatontology.com/#addColorAndFlavor
-<http://gelatontology.com/#addColorAndFlavor> rdf:type owl:NamedIndividual ;
+<http://gelatontology.com/#addColorAndFlavor> rdf:type owl:NamedIndividual ,
+                                                       <http://gelatontology.com/#PreparationStep> ;
                                               rdfs:label "addColorAndFlavor" .
 
 
 ###  http://gelatontology.com/#aging
-<http://gelatontology.com/#aging> rdf:type owl:NamedIndividual ;
+<http://gelatontology.com/#aging> rdf:type owl:NamedIndividual ,
+                                           <http://gelatontology.com/#PreparationStep> ;
                                   <http://gelatontology.com/#needsDuration> "24 hours" ;
                                   <http://gelatontology.com/#needsTemperature> "4°C" ;
                                   rdfs:label "aging" .
@@ -234,12 +236,14 @@
 
 
 ###  http://gelatontology.com/#batchFreezing
-<http://gelatontology.com/#batchFreezing> rdf:type owl:NamedIndividual ;
+<http://gelatontology.com/#batchFreezing> rdf:type owl:NamedIndividual ,
+                                                   <http://gelatontology.com/#PreparationStep> ;
                                           rdfs:label "batchFreezing" .
 
 
 ###  http://gelatontology.com/#blending
-<http://gelatontology.com/#blending> rdf:type owl:NamedIndividual ;
+<http://gelatontology.com/#blending> rdf:type owl:NamedIndividual ,
+                                              <http://gelatontology.com/#PreparationStep> ;
                                      rdfs:label "blending" .
 
 
@@ -280,7 +284,8 @@
 
 
 ###  http://gelatontology.com/#cooling
-<http://gelatontology.com/#cooling> rdf:type owl:NamedIndividual ;
+<http://gelatontology.com/#cooling> rdf:type owl:NamedIndividual ,
+                                             <http://gelatontology.com/#PreparationStep> ;
                                     <http://gelatontology.com/#needsTemperature> "below 4°C" ;
                                     rdfs:label "cooling" .
 
@@ -334,7 +339,8 @@
 
 
 ###  http://gelatontology.com/#homogenization
-<http://gelatontology.com/#homogenization> rdf:type owl:NamedIndividual ;
+<http://gelatontology.com/#homogenization> rdf:type owl:NamedIndividual ,
+                                                    <http://gelatontology.com/#PreparationStep> ;
                                            <http://gelatontology.com/#needsPressure> "2000-2500 psi" ;
                                            rdfs:label "homogenization" .
 
@@ -370,12 +376,14 @@
 
 
 ###  http://gelatontology.com/#mixPreparation
-<http://gelatontology.com/#mixPreparation> rdf:type owl:NamedIndividual ;
+<http://gelatontology.com/#mixPreparation> rdf:type owl:NamedIndividual ,
+                                                    <http://gelatontology.com/#PreparationStep> ;
                                            rdfs:label "mixPreparation" .
 
 
 ###  http://gelatontology.com/#pasteurization
-<http://gelatontology.com/#pasteurization> rdf:type owl:NamedIndividual ;
+<http://gelatontology.com/#pasteurization> rdf:type owl:NamedIndividual ,
+                                                    <http://gelatontology.com/#PreparationStep> ;
                                            <http://gelatontology.com/#needsTemperature> "63-77°C" ;
                                            rdfs:label "pasteurization" .
 
@@ -411,7 +419,8 @@
 
 
 ###  http://gelatontology.com/#storage
-<http://gelatontology.com/#storage> rdf:type owl:NamedIndividual ;
+<http://gelatontology.com/#storage> rdf:type owl:NamedIndividual ,
+                                             <http://gelatontology.com/#PreparationStep> ;
                                     rdfs:label "storage" .
 
 

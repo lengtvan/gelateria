@@ -210,13 +210,13 @@
   } ]
 }, {
   "@id" : "http://gelatontology.com/#addColorAndFlavor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PreparationStep" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "addColorAndFlavor"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#aging",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PreparationStep" ],
   "http://gelatontology.com/#needsDuration" : [ {
     "@value" : "24 hours"
   } ],
@@ -252,13 +252,13 @@
   } ]
 }, {
   "@id" : "http://gelatontology.com/#batchFreezing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PreparationStep" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "batchFreezing"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#blending",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PreparationStep" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "blending"
   } ]
@@ -309,7 +309,7 @@
   } ]
 }, {
   "@id" : "http://gelatontology.com/#cooling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PreparationStep" ],
   "http://gelatontology.com/#needsTemperature" : [ {
     "@value" : "below 4°C"
   } ],
@@ -405,7 +405,7 @@
   } ]
 }, {
   "@id" : "http://gelatontology.com/#homogenization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PreparationStep" ],
   "http://gelatontology.com/#needsPressure" : [ {
     "@value" : "2000-2500 psi"
   } ],
@@ -462,7 +462,7 @@
   } ]
 }, {
   "@id" : "http://gelatontology.com/#mixPreparation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PreparationStep" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "mixPreparation"
   } ]
@@ -504,7 +504,7 @@
   } ]
 }, {
   "@id" : "http://gelatontology.com/#pasteurization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PreparationStep" ],
   "http://gelatontology.com/#needsTemperature" : [ {
     "@value" : "63-77°C"
   } ],
@@ -555,7 +555,7 @@
   } ]
 }, {
   "@id" : "http://gelatontology.com/#storage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#PreparationStep" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "storage"
   } ]

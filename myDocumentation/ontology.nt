@@ -189,10 +189,12 @@ _:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.c
 # 
 # http://gelatontology.com/#addColorAndFlavor
 <http://gelatontology.com/#addColorAndFlavor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#addColorAndFlavor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PreparationStep> .
 <http://gelatontology.com/#addColorAndFlavor> <http://www.w3.org/2000/01/rdf-schema#label> "addColorAndFlavor" .
 # 
 # http://gelatontology.com/#aging
 <http://gelatontology.com/#aging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#aging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PreparationStep> .
 <http://gelatontology.com/#aging> <http://gelatontology.com/#needsDuration> "24 hours" .
 <http://gelatontology.com/#aging> <http://gelatontology.com/#needsTemperature> "4°C" .
 <http://gelatontology.com/#aging> <http://www.w3.org/2000/01/rdf-schema#label> "aging" .
@@ -219,10 +221,12 @@ _:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.c
 # 
 # http://gelatontology.com/#batchFreezing
 <http://gelatontology.com/#batchFreezing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#batchFreezing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PreparationStep> .
 <http://gelatontology.com/#batchFreezing> <http://www.w3.org/2000/01/rdf-schema#label> "batchFreezing" .
 # 
 # http://gelatontology.com/#blending
 <http://gelatontology.com/#blending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#blending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PreparationStep> .
 <http://gelatontology.com/#blending> <http://www.w3.org/2000/01/rdf-schema#label> "blending" .
 # 
 # http://gelatontology.com/#calciumSourceBenefit
@@ -257,6 +261,7 @@ _:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.c
 # 
 # http://gelatontology.com/#cooling
 <http://gelatontology.com/#cooling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#cooling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PreparationStep> .
 <http://gelatontology.com/#cooling> <http://gelatontology.com/#needsTemperature> "below 4°C" .
 <http://gelatontology.com/#cooling> <http://www.w3.org/2000/01/rdf-schema#label> "cooling" .
 # 
@@ -302,6 +307,7 @@ _:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.c
 # 
 # http://gelatontology.com/#homogenization
 <http://gelatontology.com/#homogenization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#homogenization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PreparationStep> .
 <http://gelatontology.com/#homogenization> <http://gelatontology.com/#needsPressure> "2000-2500 psi" .
 <http://gelatontology.com/#homogenization> <http://www.w3.org/2000/01/rdf-schema#label> "homogenization" .
 # 
@@ -332,10 +338,12 @@ _:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.c
 # 
 # http://gelatontology.com/#mixPreparation
 <http://gelatontology.com/#mixPreparation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#mixPreparation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PreparationStep> .
 <http://gelatontology.com/#mixPreparation> <http://www.w3.org/2000/01/rdf-schema#label> "mixPreparation" .
 # 
 # http://gelatontology.com/#pasteurization
 <http://gelatontology.com/#pasteurization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#pasteurization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PreparationStep> .
 <http://gelatontology.com/#pasteurization> <http://gelatontology.com/#needsTemperature> "63-77°C" .
 <http://gelatontology.com/#pasteurization> <http://www.w3.org/2000/01/rdf-schema#label> "pasteurization" .
 # 
@@ -366,6 +374,7 @@ _:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.c
 # 
 # http://gelatontology.com/#storage
 <http://gelatontology.com/#storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#PreparationStep> .
 <http://gelatontology.com/#storage> <http://www.w3.org/2000/01/rdf-schema#label> "storage" .
 # 
 # http://gelatontology.com/#strawberry
