@@ -1091,7 +1091,7 @@ section {
 }
 
 .chefs .chef-member .member-img {
-  position: relative;
+  position: center;
   overflow: hidden;
 }
 
