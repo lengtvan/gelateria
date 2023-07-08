@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>An Ontology Of Gelato</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://gelatontology.com/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://gelatontology.com/","name":"An Ontology Of Gelato", "headline":"No one can go to Italy without trying gelato at least once. This ontology is built based on a scientific article "A review on Gelato: An Italian Delicacy". It covers the basic components that makes gelato different from other frozen desserts.
+", "datePublished":"Sun Jul 09 01:01:44 ICT 2023", "author":[{"@type":"Person","name":"Van Le"},{"@type":"Person","name":"Marida Di Lembo"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+ $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>An Ontology Of Gelato</h1>
+
+
+<dl>
+<dt>Authors:</dt>
+<dd>Van Le, University of Bologna</dd><dd>Marida Di Lembo</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --></dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+No one can go to Italy without trying gelato at least once. This ontology is built based on a scientific article "A review on Gelato: An Italian Delicacy". It covers the basic components that makes gelato different from other frozen desserts.
+</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://gelatontology.com/&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>default namespace</b></td><td>&lt;http://gelatontology.com&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Gelatontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul class="hlist">
+   <li>
+      <a href="#AlternativeSweetener" title="http://gelatontology.com/#AlternativeSweetener">AlternativeSweetener</a>
+   </li>
+   <li>
+      <a href="#BasicIngredient" title="http://gelatontology.com/#BasicIngredient">BasicIngredient</a>
+   </li>
+   <li>
+      <a href="#Country" title="http://gelatontology.com/Country">CountryOfOrigin</a>
+   </li>
+   <li>
+      <a href="#Texture" title="http://gelatontology.com/Texture">FrozenDessertTexture</a>
+   </li>
+   <li>
+      <a href="#Gelato" title="http://gelatontology.com/#Gelato">Gelato</a>
+   </li>
+   <li>
+      <a href="#HealthBenefit" title="http://gelatontology.com/#HealthBenefit">GelatoHealthBenefit</a>
+   </li>
+   <li>
+      <a href="#Ingredient" title="http://gelatontology.com/#Ingredient">GelatoIngredient</a>
+   </li>
+   <li>
+      <a href="#Nutrient" title="http://gelatontology.com/#Nutrient">GelatoNutrient</a>
+   </li>
+   <li>
+      <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+   </li>
+   <li>
+      <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+   </li>
+   <li>
+      <a href="#Ice-cream" title="http://gelatontology.com/Ice-cream">
+         <span>ice cream</span>
+      </a>
+   </li>
+   <li>
+      <a href="#NaturalFlavor" title="http://gelatontology.com/#NaturalFlavor">NaturalFlavor</a>
+   </li>
+   <li>
+      <a href="#Stabilizer" title="http://gelatontology.com/#Stabilizer">Stabilizer</a>
+   </li>
+</ul><h4>Object Properties</h4><ul class="hlist">
+   <li>
+      <a href="#constitutes" title="http://gelatontology.com/#constitutes">constitutes</a>
+   </li>
+   <li>
+      <a href="#hasOrigin" title="http://gelatontology.com/hasOrigin">
+         <span>has origin</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasBenefit" title="http://gelatontology.com/#hasBenefit">hasBenefit</a>
+   </li>
+   <li>
+      <a href="#hasCompositionalDifferenceFrom"
+         title="http://gelatontology.com/hasCompositionalDifferenceFrom">hasCompositionalDifferenceFrom</a>
+   </li>
+   <li>
+      <a href="#hasIngredient" title="http://gelatontology.com/#hasIngredient">hasIngredient</a>
+   </li>
+   <li>
+      <a href="#hasNutrient" title="http://gelatontology.com/#hasNutrient">hasNutrient</a>
+   </li>
+   <li>
+      <a href="#hasTexture" title="http://gelatontology.com/hasTexture">hasTexture</a>
+   </li>
+   <li>
+      <a href="#hasTextureDifferenceFrom" title="http://gelatontology.com/hasTextureDifferenceFrom">hasTextureDifferenceFrom</a>
+   </li>
+   <li>
+      <a href="#isPopularFor" title="http://gelatontology.com/#isPopularFor">isPopularFor</a>
+   </li>
+   <li>
+      <a href="#isPreparedThrough" title="http://gelatontology.com/#isPreparedThrough">isPreparedThrough</a>
+   </li>
+</ul><h4>Data Properties</h4><ul class="hlist">
+   <li>
+      <a href="#hasFatPercentage" title="http://gelatontology.com/hasFatPercentage">hasFatPercentage</a>
+   </li>
+   <li>
+      <a href="#hasMSNFPercentage" title="http://gelatontology.com/hasMSNFPercentage">hasMSNFPercentage</a>
+   </li>
+   <li>
+      <a href="#hasSEPercentage" title="http://gelatontology.com/hasSEPercentage">hasSEPercentage</a>
+   </li>
+   <li>
+      <a href="#hasSweetenerPercentage" title="http://gelatontology.com/hasSweetenerPercentage">hasSweetenerPercentage</a>
+   </li>
+   <li>
+      <a href="#hasTSPercentage" title="http://gelatontology.com/hasTSPercentage">hasTSPercentage</a>
+   </li>
+   <li>
+      <a href="#needsDuration" title="http://gelatontology.com/#needsDuration">needsDuration</a>
+   </li>
+   <li>
+      <a href="#needsPressure" title="http://gelatontology.com/#needsPressure">needsPressure</a>
+   </li>
+   <li>
+      <a href="#needsTemperature" title="http://gelatontology.com/#needsTemperature">needsTemperature</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul class="hlist">
+   <li>
+      <a href="#addColorAndFlavor" title="http://gelatontology.com/#addColorAndFlavor">addColorAndFlavor</a>
+   </li>
+   <li>
+      <a href="#aging" title="http://gelatontology.com/#aging">aging</a>
+   </li>
+   <li>
+      <a href="#alcohol" title="http://gelatontology.com/#alcohol">alcohol</a>
+   </li>
+   <li>
+      <a href="#antioxidant" title="http://gelatontology.com/#antioxidant">antioxidant</a>
+   </li>
+   <li>
+      <a href="#antioxidantBenefit" title="http://gelatontology.com/#antioxidantBenefit">antioxidantBenefit</a>
+   </li>
+   <li>
+      <a href="#banana" title="http://gelatontology.com/#banana">banana</a>
+   </li>
+   <li>
+      <a href="#batchFreezing" title="http://gelatontology.com/#batchFreezing">batchFreezing</a>
+   </li>
+   <li>
+      <a href="#blending" title="http://gelatontology.com/#blending">blending</a>
+   </li>
+   <li>
+      <a href="#calciumSourceBenefit" title="http://gelatontology.com/#calciumSourceBenefit">calciumSourceBenefit</a>
+   </li>
+   <li>
+      <a href="#carrageenan" title="http://gelatontology.com/#carrageenan">carrageenan</a>
+   </li>
+   <li>
+      <a href="#chili" title="http://gelatontology.com/#chili">chili</a>
+   </li>
+   <li>
+      <a href="#chocolate" title="http://gelatontology.com/#chocolate">chocolate</a>
+   </li>
+   <li>
+      <a href="#cocoaNib" title="http://gelatontology.com/#cocoaNib">cocoa nib</a>
+   </li>
+   <li>
+      <a href="#cocoaPowder" title="http://gelatontology.com/#cocoaPowder">cocoa powder</a>
+   </li>
+   <li>
+      <a href="#cooling" title="http://gelatontology.com/#cooling">cooling</a>
+   </li>
+   <li>
+      <a href="#custard" title="http://gelatontology.com/#custard">custard</a>
+   </li>
+   <li>
+      <a href="#darkChocolate" title="http://gelatontology.com/#darkChocolate">darkChocolate</a>
+   </li>
+   <li>
+      <a href="#digestiveHealthBenefit" title="http://gelatontology.com/#digestiveHealthBenefit">digestiveHealthBenefit</a>
+   </li>
+   <li>
+      <a href="#eggYolk" title="http://gelatontology.com/#eggYolk">eggYolk</a>
+   </li>
+   <li>
+      <a href="#erythritol" title="http://gelatontology.com/#erythritol">erythritol</a>
+   </li>
+   <li>
+      <a href="#freshCream" title="http://gelatontology.com/#freshCream">freshCream</a>
+   </li>
+   <li>
+      <a href="#frozen" title="http://gelatontology.com/frozen">
+         <span>frozen</span>
+      </a>
+   </li>
+   <li>
+      <a href="#fruit" title="http://gelatontology.com/#fruit">fruit</a>
+   </li>
+   <li>
+      <a href="#guarGum" title="http://gelatontology.com/#guarGum">guarGum</a>
+   </li>
+   <li>
+      <a href="#homogenization" title="http://gelatontology.com/#homogenization">homogenization</a>
+   </li>
+   <li>
+      <a href="#honey" title="http://gelatontology.com/#honey">honey</a>
+   </li>
+   <li>
+      <a href="#hydrationBenefit" title="http://gelatontology.com/#hydrationBenefit">hydrationBenefit</a>
+   </li>
+   <li>
+      <a href="#Italy" title="http://gelatontology.com/Italy">
+         <span>italy</span>
+      </a>
+   </li>
+   <li>
+      <a href="#lemon" title="http://gelatontology.com/#lemon">lemon</a>
+   </li>
+   <li>
+      <a href="#locustBeanGum" title="http://gelatontology.com/#locustBeanGum">locustBeanGum</a>
+   </li>
+   <li>
+      <a href="#milk" title="http://gelatontology.com/#milk">milk</a>
+   </li>
+   <li>
+      <a href="#mixPreparation" title="http://gelatontology.com/#mixPreparation">mixPreparation</a>
+   </li>
+   <li>
+      <a href="#pasteurization" title="http://gelatontology.com/#pasteurization">pasteurization</a>
+   </li>
+   <li>
+      <a href="#peach" title="http://gelatontology.com/#peach">peach</a>
+   </li>
+   <li>
+      <a href="#pectin" title="http://gelatontology.com/#pectin">pectin</a>
+   </li>
+   <li>
+      <a href="#phenolicCompound" title="http://gelatontology.com/#phenolicCompound">phenolicCompound</a>
+   </li>
+   <li>
+      <a href="#semi-frozen" title="http://gelatontology.com/semi-frozen">
+         <span>semi frozen</span>
+      </a>
+   </li>
+   <li>
+      <a href="#skimmedMilkPowder" title="http://gelatontology.com/#skimmedMilkPowder">skimmedMilkPowder</a>
+   </li>
+   <li>
+      <a href="#spice" title="http://gelatontology.com/#spice">spice</a>
+   </li>
+   <li>
+      <a href="#storage" title="http://gelatontology.com/#storage">storage</a>
+   </li>
+   <li>
+      <a href="#strawberry" title="http://gelatontology.com/#strawberry">strawberry</a>
+   </li>
+   <li>
+      <a href="#sugar" title="http://gelatontology.com/#sugar">sugar</a>
+   </li>
+   <li>
+      <a href="#trehalose" title="http://gelatontology.com/#trehalose">trehalose</a>
+   </li>
+   <li>
+      <a href="#vitaminC" title="http://gelatontology.com/#vitaminC">vitaminC</a>
+   </li>
+   <li>
+      <a href="#vitaminCBenefit" title="http://gelatontology.com/#vitaminCBenefit">vitaminCBenefit</a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Gelatontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Gelatontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Gelatontology.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#AlternativeSweetener" title="http://gelatontology.com/#AlternativeSweetener">AlternativeSweetener</a>
+      </li>
+      <li>
+         <a href="#BasicIngredient" title="http://gelatontology.com/#BasicIngredient">BasicIngredient</a>
+      </li>
+      <li>
+         <a href="#Country" title="http://gelatontology.com/Country">CountryOfOrigin</a>
+      </li>
+      <li>
+         <a href="#Texture" title="http://gelatontology.com/Texture">FrozenDessertTexture</a>
+      </li>
+      <li>
+         <a href="#Gelato" title="http://gelatontology.com/#Gelato">Gelato</a>
+      </li>
+      <li>
+         <a href="#HealthBenefit" title="http://gelatontology.com/#HealthBenefit">GelatoHealthBenefit</a>
+      </li>
+      <li>
+         <a href="#Ingredient" title="http://gelatontology.com/#Ingredient">GelatoIngredient</a>
+      </li>
+      <li>
+         <a href="#Nutrient" title="http://gelatontology.com/#Nutrient">GelatoNutrient</a>
+      </li>
+      <li>
+         <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+      </li>
+      <li>
+         <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+      </li>
+      <li>
+         <a href="#Ice-cream" title="http://gelatontology.com/Ice-cream">
+            <span>ice cream</span>
+         </a>
+      </li>
+      <li>
+         <a href="#NaturalFlavor" title="http://gelatontology.com/#NaturalFlavor">NaturalFlavor</a>
+      </li>
+      <li>
+         <a href="#Stabilizer" title="http://gelatontology.com/#Stabilizer">Stabilizer</a>
+      </li>
+   </ul>
+   <div class="entity" id="AlternativeSweetener">
+      <h3>AlternativeSweetener<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#AlternativeSweetener</p>
+      <div class="comment">
+         <span class="markdown">This class includes instances of the most popular alternative sweetener often used to make gelato.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Ingredient" title="http://gelatontology.com/#Ingredient">GelatoIngredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#erythritol" title="http://gelatontology.com/#erythritol">erythritol</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#honey" title="http://gelatontology.com/#honey">honey</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#trehalose" title="http://gelatontology.com/#trehalose">trehalose</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BasicIngredient">
+      <h3>BasicIngredient<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#BasicIngredient</p>
+      <div class="comment">
+         <span class="markdown">This class includes the basic ingredients to make gelato</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Ingredient" title="http://gelatontology.com/#Ingredient">GelatoIngredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#eggYolk" title="http://gelatontology.com/#eggYolk">eggYolk</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#freshCream" title="http://gelatontology.com/#freshCream">freshCream</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#milk" title="http://gelatontology.com/#milk">milk</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#skimmedMilkPowder" title="http://gelatontology.com/#skimmedMilkPowder">skimmedMilkPowder</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#sugar" title="http://gelatontology.com/#sugar">sugar</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Country">
+      <h3>CountryOfOrigin<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/Country</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasOrigin" title="http://gelatontology.com/hasOrigin">has origin</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Italy" title="http://gelatontology.com/Italy">italy</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Texture">
+      <h3>FrozenDessertTexture<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/Texture</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has members</dt>
+         <dd>
+            <a href="#frozen" title="http://gelatontology.com/frozen">frozen</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#semi-frozen" title="http://gelatontology.com/semi-frozen">semi frozen</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Gelato">
+      <h3>Gelato<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#Gelato</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasOrigin" title="http://gelatontology.com/hasOrigin">has origin</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPopularFor" title="http://gelatontology.com/#isPopularFor">isPopularFor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPreparedThrough" title="http://gelatontology.com/#isPreparedThrough">isPreparedThrough</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HealthBenefit">
+      <h3>GelatoHealthBenefit<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#HealthBenefit</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has members</dt>
+         <dd>
+            <a href="#antioxidantBenefit" title="http://gelatontology.com/#antioxidantBenefit">antioxidantBenefit</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#calciumSourceBenefit" title="http://gelatontology.com/#calciumSourceBenefit">calciumSourceBenefit</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#digestiveHealthBenefit" title="http://gelatontology.com/#digestiveHealthBenefit">digestiveHealthBenefit</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#hydrationBenefit" title="http://gelatontology.com/#hydrationBenefit">hydrationBenefit</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#vitaminCBenefit" title="http://gelatontology.com/#vitaminCBenefit">vitaminCBenefit</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Ingredient">
+      <h3>GelatoIngredient<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#Ingredient</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#AlternativeSweetener" title="http://gelatontology.com/#AlternativeSweetener">AlternativeSweetener</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#BasicIngredient" title="http://gelatontology.com/#BasicIngredient">BasicIngredient</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#NaturalFlavor" title="http://gelatontology.com/#NaturalFlavor">NaturalFlavor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Stabilizer" title="http://gelatontology.com/#Stabilizer">Stabilizer</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Nutrient">
+      <h3>GelatoNutrient<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#Nutrient</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has members</dt>
+         <dd>
+            <a href="#antioxidant" title="http://gelatontology.com/#antioxidant">antioxidant</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#phenolicCompound" title="http://gelatontology.com/#phenolicCompound">phenolicCompound</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#vitaminC" title="http://gelatontology.com/#vitaminC">vitaminC</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PopularFlavor">
+      <h3>GelatoPopularFlavor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#PopularFlavor</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isPopularFor" title="http://gelatontology.com/#isPopularFor">isPopularFor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#banana" title="http://gelatontology.com/#banana">banana</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#chili" title="http://gelatontology.com/#chili">chili</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#chocolate" title="http://gelatontology.com/#chocolate">chocolate</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#custard" title="http://gelatontology.com/#custard">custard</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#darkChocolate" title="http://gelatontology.com/#darkChocolate">darkChocolate</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#lemon" title="http://gelatontology.com/#lemon">lemon</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#peach" title="http://gelatontology.com/#peach">peach</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#strawberry" title="http://gelatontology.com/#strawberry">strawberry</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PreparationStep">
+      <h3>GelatoPreparationStep<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#PreparationStep</p>
+      <div class="comment">
+         <span class="markdown">This includes the basic preparation steps for the making of gelato.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#needsDuration" title="http://gelatontology.com/#needsDuration">needsDuration</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#needsPressure" title="http://gelatontology.com/#needsPressure">needsPressure</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#needsTemperature" title="http://gelatontology.com/#needsTemperature">needsTemperature</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isPreparedThrough" title="http://gelatontology.com/#isPreparedThrough">isPreparedThrough</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#addColorAndFlavor" title="http://gelatontology.com/#addColorAndFlavor">addColorAndFlavor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#aging" title="http://gelatontology.com/#aging">aging</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#batchFreezing" title="http://gelatontology.com/#batchFreezing">batchFreezing</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#blending" title="http://gelatontology.com/#blending">blending</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#cooling" title="http://gelatontology.com/#cooling">cooling</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#homogenization" title="http://gelatontology.com/#homogenization">homogenization</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#mixPreparation" title="http://gelatontology.com/#mixPreparation">mixPreparation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#pasteurization" title="http://gelatontology.com/#pasteurization">pasteurization</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#storage" title="http://gelatontology.com/#storage">storage</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Ice-cream">
+      <h3>ice cream<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/Ice-cream</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
+   <div class="entity" id="NaturalFlavor">
+      <h3>NaturalFlavor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#NaturalFlavor</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Ingredient" title="http://gelatontology.com/#Ingredient">GelatoIngredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#alcohol" title="http://gelatontology.com/#alcohol">alcohol</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#cocoaNib" title="http://gelatontology.com/#cocoaNib">cocoa nib</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#cocoaPowder" title="http://gelatontology.com/#cocoaPowder">cocoa powder</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#fruit" title="http://gelatontology.com/#fruit">fruit</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#spice" title="http://gelatontology.com/#spice">spice</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Stabilizer">
+      <h3>Stabilizer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#Stabilizer</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Ingredient" title="http://gelatontology.com/#Ingredient">GelatoIngredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#carrageenan" title="http://gelatontology.com/#carrageenan">carrageenan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#guarGum" title="http://gelatontology.com/#guarGum">guarGum</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#locustBeanGum" title="http://gelatontology.com/#locustBeanGum">locustBeanGum</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#pectin" title="http://gelatontology.com/#pectin">pectin</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#constitutes" title="http://gelatontology.com/#constitutes">constitutes</a>
+      </li>
+      <li>
+         <a href="#hasOrigin" title="http://gelatontology.com/hasOrigin">
+            <span>has origin</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasBenefit" title="http://gelatontology.com/#hasBenefit">hasBenefit</a>
+      </li>
+      <li>
+         <a href="#hasCompositionalDifferenceFrom"
+            title="http://gelatontology.com/hasCompositionalDifferenceFrom">hasCompositionalDifferenceFrom</a>
+      </li>
+      <li>
+         <a href="#hasIngredient" title="http://gelatontology.com/#hasIngredient">hasIngredient</a>
+      </li>
+      <li>
+         <a href="#hasNutrient" title="http://gelatontology.com/#hasNutrient">hasNutrient</a>
+      </li>
+      <li>
+         <a href="#hasTexture" title="http://gelatontology.com/hasTexture">hasTexture</a>
+      </li>
+      <li>
+         <a href="#hasTextureDifferenceFrom" title="http://gelatontology.com/hasTextureDifferenceFrom">hasTextureDifferenceFrom</a>
+      </li>
+      <li>
+         <a href="#isPopularFor" title="http://gelatontology.com/#isPopularFor">isPopularFor</a>
+      </li>
+      <li>
+         <a href="#isPreparedThrough" title="http://gelatontology.com/#isPreparedThrough">isPreparedThrough</a>
+      </li>
+   </ul>
+   <div class="entity" id="constitutes">
+      <h3>constitutes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#constitutes</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOrigin">
+      <h3>has origin<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/hasOrigin</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Gelato" title="http://gelatontology.com/#Gelato">Gelato</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Country" title="http://gelatontology.com/Country">CountryOfOrigin</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasBenefit">
+      <h3>hasBenefit<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#hasBenefit</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCompositionalDifferenceFrom">
+      <h3>hasCompositionalDifferenceFrom<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/hasCompositionalDifferenceFrom</p>
+   </div>
+   <div class="entity" id="hasIngredient">
+      <h3>hasIngredient<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#hasIngredient</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNutrient">
+      <h3>hasNutrient<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#hasNutrient</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTexture">
+      <h3>hasTexture<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/hasTexture</p>
+   </div>
+   <div class="entity" id="hasTextureDifferenceFrom">
+      <h3>hasTextureDifferenceFrom<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/hasTextureDifferenceFrom</p>
+   </div>
+   <div class="entity" id="isPopularFor">
+      <h3>isPopularFor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#isPopularFor</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Gelato" title="http://gelatontology.com/#Gelato">Gelato</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPreparedThrough">
+      <h3>isPreparedThrough<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#isPreparedThrough</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Gelato" title="http://gelatontology.com/#Gelato">Gelato</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasFatPercentage" title="http://gelatontology.com/hasFatPercentage">hasFatPercentage</a>
+      </li>
+      <li>
+         <a href="#hasMSNFPercentage" title="http://gelatontology.com/hasMSNFPercentage">hasMSNFPercentage</a>
+      </li>
+      <li>
+         <a href="#hasSEPercentage" title="http://gelatontology.com/hasSEPercentage">hasSEPercentage</a>
+      </li>
+      <li>
+         <a href="#hasSweetenerPercentage" title="http://gelatontology.com/hasSweetenerPercentage">hasSweetenerPercentage</a>
+      </li>
+      <li>
+         <a href="#hasTSPercentage" title="http://gelatontology.com/hasTSPercentage">hasTSPercentage</a>
+      </li>
+      <li>
+         <a href="#needsDuration" title="http://gelatontology.com/#needsDuration">needsDuration</a>
+      </li>
+      <li>
+         <a href="#needsPressure" title="http://gelatontology.com/#needsPressure">needsPressure</a>
+      </li>
+      <li>
+         <a href="#needsTemperature" title="http://gelatontology.com/#needsTemperature">needsTemperature</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasFatPercentage">
+      <h3>hasFatPercentage<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/hasFatPercentage</p>
+      <div class="comment">
+         <span class="markdown">This indicates the Milk Fat Percentage</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Ice-cream" title="http://gelatontology.com/Ice-cream">ice cream</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Gelato" title="http://gelatontology.com/#Gelato">Gelato</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMSNFPercentage">
+      <h3>hasMSNFPercentage<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/hasMSNFPercentage</p>
+      <div class="comment">
+         <span class="markdown">This indicates the milk solid non fat percentage.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Ice-cream" title="http://gelatontology.com/Ice-cream">ice cream</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Gelato" title="http://gelatontology.com/#Gelato">Gelato</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSEPercentage">
+      <h3>hasSEPercentage<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/hasSEPercentage</p>
+      <div class="comment">
+         <span class="markdown">This indicates the Stabilizer and Emulsifier Percentage</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Ice-cream" title="http://gelatontology.com/Ice-cream">ice cream</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Gelato" title="http://gelatontology.com/#Gelato">Gelato</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSweetenerPercentage">
+      <h3>hasSweetenerPercentage<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/hasSweetenerPercentage</p>
+      <div class="comment">
+         <span class="markdown">This indicates the percentage of sweetener.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Ice-cream" title="http://gelatontology.com/Ice-cream">ice cream</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Gelato" title="http://gelatontology.com/#Gelato">Gelato</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTSPercentage">
+      <h3>hasTSPercentage<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/hasTSPercentage</p>
+      <div class="comment">
+         <span class="markdown">This indicates the total solids percentage.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Ice-cream" title="http://gelatontology.com/Ice-cream">ice cream</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Gelato" title="http://gelatontology.com/#Gelato">Gelato</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="needsDuration">
+      <h3>needsDuration<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#needsDuration</p>
+      <div class="comment">
+         <span class="markdown">This indicates the time needed for certain preparation steps in the making of gelato.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="needsPressure">
+      <h3>needsPressure<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#needsPressure</p>
+      <div class="comment">
+         <span class="markdown">This indicates the pressure needed in certain preparation steps in the making of gelato.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="needsTemperature">
+      <h3>needsTemperature<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#needsTemperature</p>
+      <div class="comment">
+         <span class="markdown">This indicates the temperature needed during certain preparation steps in the making of gelato.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#addColorAndFlavor" title="http://gelatontology.com/#addColorAndFlavor">addColorAndFlavor</a>
+      </li>
+      <li>
+         <a href="#aging" title="http://gelatontology.com/#aging">aging</a>
+      </li>
+      <li>
+         <a href="#alcohol" title="http://gelatontology.com/#alcohol">alcohol</a>
+      </li>
+      <li>
+         <a href="#antioxidant" title="http://gelatontology.com/#antioxidant">antioxidant</a>
+      </li>
+      <li>
+         <a href="#antioxidantBenefit" title="http://gelatontology.com/#antioxidantBenefit">antioxidantBenefit</a>
+      </li>
+      <li>
+         <a href="#banana" title="http://gelatontology.com/#banana">banana</a>
+      </li>
+      <li>
+         <a href="#batchFreezing" title="http://gelatontology.com/#batchFreezing">batchFreezing</a>
+      </li>
+      <li>
+         <a href="#blending" title="http://gelatontology.com/#blending">blending</a>
+      </li>
+      <li>
+         <a href="#calciumSourceBenefit" title="http://gelatontology.com/#calciumSourceBenefit">calciumSourceBenefit</a>
+      </li>
+      <li>
+         <a href="#carrageenan" title="http://gelatontology.com/#carrageenan">carrageenan</a>
+      </li>
+      <li>
+         <a href="#chili" title="http://gelatontology.com/#chili">chili</a>
+      </li>
+      <li>
+         <a href="#chocolate" title="http://gelatontology.com/#chocolate">chocolate</a>
+      </li>
+      <li>
+         <a href="#cocoaNib" title="http://gelatontology.com/#cocoaNib">cocoa nib</a>
+      </li>
+      <li>
+         <a href="#cocoaPowder" title="http://gelatontology.com/#cocoaPowder">cocoa powder</a>
+      </li>
+      <li>
+         <a href="#cooling" title="http://gelatontology.com/#cooling">cooling</a>
+      </li>
+      <li>
+         <a href="#custard" title="http://gelatontology.com/#custard">custard</a>
+      </li>
+      <li>
+         <a href="#darkChocolate" title="http://gelatontology.com/#darkChocolate">darkChocolate</a>
+      </li>
+      <li>
+         <a href="#digestiveHealthBenefit" title="http://gelatontology.com/#digestiveHealthBenefit">digestiveHealthBenefit</a>
+      </li>
+      <li>
+         <a href="#eggYolk" title="http://gelatontology.com/#eggYolk">eggYolk</a>
+      </li>
+      <li>
+         <a href="#erythritol" title="http://gelatontology.com/#erythritol">erythritol</a>
+      </li>
+      <li>
+         <a href="#freshCream" title="http://gelatontology.com/#freshCream">freshCream</a>
+      </li>
+      <li>
+         <a href="#frozen" title="http://gelatontology.com/frozen">
+            <span>frozen</span>
+         </a>
+      </li>
+      <li>
+         <a href="#fruit" title="http://gelatontology.com/#fruit">fruit</a>
+      </li>
+      <li>
+         <a href="#guarGum" title="http://gelatontology.com/#guarGum">guarGum</a>
+      </li>
+      <li>
+         <a href="#homogenization" title="http://gelatontology.com/#homogenization">homogenization</a>
+      </li>
+      <li>
+         <a href="#honey" title="http://gelatontology.com/#honey">honey</a>
+      </li>
+      <li>
+         <a href="#hydrationBenefit" title="http://gelatontology.com/#hydrationBenefit">hydrationBenefit</a>
+      </li>
+      <li>
+         <a href="#Italy" title="http://gelatontology.com/Italy">
+            <span>italy</span>
+         </a>
+      </li>
+      <li>
+         <a href="#lemon" title="http://gelatontology.com/#lemon">lemon</a>
+      </li>
+      <li>
+         <a href="#locustBeanGum" title="http://gelatontology.com/#locustBeanGum">locustBeanGum</a>
+      </li>
+      <li>
+         <a href="#milk" title="http://gelatontology.com/#milk">milk</a>
+      </li>
+      <li>
+         <a href="#mixPreparation" title="http://gelatontology.com/#mixPreparation">mixPreparation</a>
+      </li>
+      <li>
+         <a href="#pasteurization" title="http://gelatontology.com/#pasteurization">pasteurization</a>
+      </li>
+      <li>
+         <a href="#peach" title="http://gelatontology.com/#peach">peach</a>
+      </li>
+      <li>
+         <a href="#pectin" title="http://gelatontology.com/#pectin">pectin</a>
+      </li>
+      <li>
+         <a href="#phenolicCompound" title="http://gelatontology.com/#phenolicCompound">phenolicCompound</a>
+      </li>
+      <li>
+         <a href="#semi-frozen" title="http://gelatontology.com/semi-frozen">
+            <span>semi frozen</span>
+         </a>
+      </li>
+      <li>
+         <a href="#skimmedMilkPowder" title="http://gelatontology.com/#skimmedMilkPowder">skimmedMilkPowder</a>
+      </li>
+      <li>
+         <a href="#spice" title="http://gelatontology.com/#spice">spice</a>
+      </li>
+      <li>
+         <a href="#storage" title="http://gelatontology.com/#storage">storage</a>
+      </li>
+      <li>
+         <a href="#strawberry" title="http://gelatontology.com/#strawberry">strawberry</a>
+      </li>
+      <li>
+         <a href="#sugar" title="http://gelatontology.com/#sugar">sugar</a>
+      </li>
+      <li>
+         <a href="#trehalose" title="http://gelatontology.com/#trehalose">trehalose</a>
+      </li>
+      <li>
+         <a href="#vitaminC" title="http://gelatontology.com/#vitaminC">vitaminC</a>
+      </li>
+      <li>
+         <a href="#vitaminCBenefit" title="http://gelatontology.com/#vitaminCBenefit">vitaminCBenefit</a>
+      </li>
+   </ul>
+   <div class="entity" id="addColorAndFlavor">
+      <h3>addColorAndFlavor<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#addColorAndFlavor</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="aging">
+      <h3>aging<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#aging</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#needsDuration" title="http://gelatontology.com/#needsDuration">needsDuration</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"24 hours"</span>
+         </dd>
+         <dd>
+            <a href="#needsTemperature" title="http://gelatontology.com/#needsTemperature">needsTemperature</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"4°C"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="alcohol">
+      <h3>alcohol<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#alcohol</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#NaturalFlavor" title="http://gelatontology.com/#NaturalFlavor">NaturalFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="antioxidant">
+      <h3>antioxidant<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#antioxidant</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Nutrient" title="http://gelatontology.com/#Nutrient">GelatoNutrient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="antioxidantBenefit">
+      <h3>antioxidantBenefit<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#antioxidantBenefit</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HealthBenefit" title="http://gelatontology.com/#HealthBenefit">GelatoHealthBenefit</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="banana">
+      <h3>banana<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#banana</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="batchFreezing">
+      <h3>batchFreezing<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#batchFreezing</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="blending">
+      <h3>blending<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#blending</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="calciumSourceBenefit">
+      <h3>calciumSourceBenefit<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#calciumSourceBenefit</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HealthBenefit" title="http://gelatontology.com/#HealthBenefit">GelatoHealthBenefit</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="carrageenan">
+      <h3>carrageenan<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#carrageenan</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Stabilizer" title="http://gelatontology.com/#Stabilizer">Stabilizer</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="chili">
+      <h3>chili<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#chili</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="chocolate">
+      <h3>chocolate<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#chocolate</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="cocoaNib">
+      <h3>cocoa nib<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#cocoaNib</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#NaturalFlavor" title="http://gelatontology.com/#NaturalFlavor">NaturalFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="cocoaPowder">
+      <h3>cocoa powder<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#cocoaPowder</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#NaturalFlavor" title="http://gelatontology.com/#NaturalFlavor">NaturalFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="cooling">
+      <h3>cooling<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#cooling</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#needsTemperature" title="http://gelatontology.com/#needsTemperature">needsTemperature</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"below 4°C"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="custard">
+      <h3>custard<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#custard</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="darkChocolate">
+      <h3>darkChocolate<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#darkChocolate</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="digestiveHealthBenefit">
+      <h3>digestiveHealthBenefit<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#digestiveHealthBenefit</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HealthBenefit" title="http://gelatontology.com/#HealthBenefit">GelatoHealthBenefit</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="eggYolk">
+      <h3>eggYolk<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#eggYolk</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#BasicIngredient" title="http://gelatontology.com/#BasicIngredient">BasicIngredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="erythritol">
+      <h3>erythritol<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#erythritol</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#AlternativeSweetener" title="http://gelatontology.com/#AlternativeSweetener">AlternativeSweetener</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="freshCream">
+      <h3>freshCream<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#freshCream</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#BasicIngredient" title="http://gelatontology.com/#BasicIngredient">BasicIngredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="frozen">
+      <h3>frozen<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/frozen</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Texture" title="http://gelatontology.com/Texture">FrozenDessertTexture</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="fruit">
+      <h3>fruit<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#fruit</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#NaturalFlavor" title="http://gelatontology.com/#NaturalFlavor">NaturalFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="guarGum">
+      <h3>guarGum<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#guarGum</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Stabilizer" title="http://gelatontology.com/#Stabilizer">Stabilizer</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="homogenization">
+      <h3>homogenization<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#homogenization</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#needsPressure" title="http://gelatontology.com/#needsPressure">needsPressure</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2000-2500 psi"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="honey">
+      <h3>honey<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#honey</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#AlternativeSweetener" title="http://gelatontology.com/#AlternativeSweetener">AlternativeSweetener</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="hydrationBenefit">
+      <h3>hydrationBenefit<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#hydrationBenefit</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HealthBenefit" title="http://gelatontology.com/#HealthBenefit">GelatoHealthBenefit</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Italy">
+      <h3>italy<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/Italy</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Country" title="http://gelatontology.com/Country">CountryOfOrigin</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="lemon">
+      <h3>lemon<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#lemon</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="locustBeanGum">
+      <h3>locustBeanGum<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#locustBeanGum</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Stabilizer" title="http://gelatontology.com/#Stabilizer">Stabilizer</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="milk">
+      <h3>milk<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#milk</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#BasicIngredient" title="http://gelatontology.com/#BasicIngredient">BasicIngredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="mixPreparation">
+      <h3>mixPreparation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#mixPreparation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="pasteurization">
+      <h3>pasteurization<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#pasteurization</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#needsTemperature" title="http://gelatontology.com/#needsTemperature">needsTemperature</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"63-77°C"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="peach">
+      <h3>peach<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#peach</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="pectin">
+      <h3>pectin<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#pectin</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Stabilizer" title="http://gelatontology.com/#Stabilizer">Stabilizer</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="phenolicCompound">
+      <h3>phenolicCompound<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#phenolicCompound</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Nutrient" title="http://gelatontology.com/#Nutrient">GelatoNutrient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="semi-frozen">
+      <h3>semi frozen<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/semi-frozen</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Texture" title="http://gelatontology.com/Texture">FrozenDessertTexture</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="skimmedMilkPowder">
+      <h3>skimmedMilkPowder<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#skimmedMilkPowder</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#BasicIngredient" title="http://gelatontology.com/#BasicIngredient">BasicIngredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="spice">
+      <h3>spice<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#spice</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#NaturalFlavor" title="http://gelatontology.com/#NaturalFlavor">NaturalFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="storage">
+      <h3>storage<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#storage</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PreparationStep" title="http://gelatontology.com/#PreparationStep">GelatoPreparationStep</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="strawberry">
+      <h3>strawberry<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#strawberry</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PopularFlavor" title="http://gelatontology.com/#PopularFlavor">GelatoPopularFlavor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="sugar">
+      <h3>sugar<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#sugar</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#BasicIngredient" title="http://gelatontology.com/#BasicIngredient">BasicIngredient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="trehalose">
+      <h3>trehalose<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#trehalose</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#AlternativeSweetener" title="http://gelatontology.com/#AlternativeSweetener">AlternativeSweetener</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="vitaminC">
+      <h3>vitaminC<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#vitaminC</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Nutrient" title="http://gelatontology.com/#Nutrient">GelatoNutrient</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="vitaminCBenefit">
+      <h3>vitaminCBenefit<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gelatontology.com/#vitaminCBenefit</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HealthBenefit" title="http://gelatontology.com/#HealthBenefit">GelatoHealthBenefit</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgements">
+<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

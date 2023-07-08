@@ -1,0 +1,1048 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://gelatontology.com/"
+     xml:base="http://gelatontology.com/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:gelatontology="http://gelatontology.com/#">
+    <owl:Ontology rdf:about="http://gelatontology.com/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://gelatontology.com/hasCompositionalDifferenceFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/hasCompositionalDifferenceFrom">
+        <rdfs:label>hasCompositionalDifferenceFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/hasOrigin -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/hasOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://gelatontology.com/#Gelato"/>
+        <rdfs:range rdf:resource="http://gelatontology.com/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/hasTexture -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/hasTexture">
+        <rdfs:label>hasTexture</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/hasTextureDifferenceFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/hasTextureDifferenceFrom">
+        <rdfs:label>hasTextureDifferenceFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/#constitutes -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/#constitutes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>constitutes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/#hasBenefit -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/#hasBenefit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>hasBenefit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/#hasIngredient -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/#hasIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>hasIngredient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/#hasNutrient -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/#hasNutrient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>hasNutrient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/#isPopularFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/#isPopularFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://gelatontology.com/#Gelato"/>
+        <rdfs:range rdf:resource="http://gelatontology.com/#PopularFlavor"/>
+        <rdfs:label>isPopularFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/#isPreparedThrough -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/#isPreparedThrough">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://gelatontology.com/#Gelato"/>
+        <rdfs:range rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:label>isPreparedThrough</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://gelatontology.com/hasFatPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/hasFatPercentage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gelatontology.com/Ice-cream"/>
+                    <rdf:Description rdf:about="http://gelatontology.com/#Gelato"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment>This indicates the Milk Fat Percentage</rdfs:comment>
+        <rdfs:label>hasFatPercentage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gelatontology.com/hasMSNFPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/hasMSNFPercentage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gelatontology.com/Ice-cream"/>
+                    <rdf:Description rdf:about="http://gelatontology.com/#Gelato"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment>This indicates the milk solid non fat percentage.</rdfs:comment>
+        <rdfs:label>hasMSNFPercentage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gelatontology.com/hasSEPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/hasSEPercentage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gelatontology.com/Ice-cream"/>
+                    <rdf:Description rdf:about="http://gelatontology.com/#Gelato"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment>This indicates the Stabilizer and Emulsifier Percentage</rdfs:comment>
+        <rdfs:label>hasSEPercentage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gelatontology.com/hasSweetenerPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/hasSweetenerPercentage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gelatontology.com/Ice-cream"/>
+                    <rdf:Description rdf:about="http://gelatontology.com/#Gelato"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment>This indicates the percentage of sweetener.</rdfs:comment>
+        <rdfs:label>hasSweetenerPercentage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gelatontology.com/hasTSPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/hasTSPercentage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gelatontology.com/Ice-cream"/>
+                    <rdf:Description rdf:about="http://gelatontology.com/#Gelato"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment>This indicates the total solids percentage.</rdfs:comment>
+        <rdfs:label>hasTSPercentage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gelatontology.com/#needsDuration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/#needsDuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:comment>This indicates the time needed for certain preparation steps in the making of gelato.</rdfs:comment>
+        <rdfs:label>needsDuration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gelatontology.com/#needsPressure -->
+
+
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/#needsPressure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:comment>This indicates the pressure needed in certain preparation steps in the making of gelato.</rdfs:comment>
+        <rdfs:label>needsPressure</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gelatontology.com/#needsTemperature -->
+
+
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/#needsTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:comment>This indicates the temperature needed during certain preparation steps in the making of gelato.</rdfs:comment>
+        <rdfs:label>needsTemperature</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://gelatontology.com/Country -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/Country">
+        <rdfs:label>CountryOfOrigin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/Ice-cream -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/Ice-cream">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/Texture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasTexture"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://gelatontology.com/frozen"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasFatPercentage"/>
+                <owl:hasValue>8-10%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasMSNFPercentage"/>
+                <owl:hasValue>10-12%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasSEPercentage"/>
+                <owl:hasValue>0.4%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasSweetenerPercentage"/>
+                <owl:hasValue>15-17%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasTSPercentage"/>
+                <owl:hasValue>32-36%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/Texture -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/Texture">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/Ice-cream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>FrozenDessertTexture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#AlternativeSweetener -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#AlternativeSweetener">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/#Ingredient"/>
+        <rdfs:comment>This class includes instances of the most popular alternative sweetener often used to make gelato.</rdfs:comment>
+        <rdfs:label>AlternativeSweetener</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#BasicIngredient -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#BasicIngredient">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/#Ingredient"/>
+        <rdfs:comment>This class includes the basic ingredients to make gelato</rdfs:comment>
+        <rdfs:label>BasicIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#Gelato -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#Gelato">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasCompositionalDifferenceFrom"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/Ice-cream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/Texture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasTexture"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://gelatontology.com/semi-frozen"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasTextureDifferenceFrom"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/Ice-cream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#HealthBenefit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Ingredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasNutrient"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Nutrient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasOrigin"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://gelatontology.com/Italy"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasFatPercentage"/>
+                <owl:hasValue>4-8%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasMSNFPercentage"/>
+                <owl:hasValue>9-12%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasSEPercentage"/>
+                <owl:hasValue>0.5%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasSweetenerPercentage"/>
+                <owl:hasValue>15-24%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/hasTSPercentage"/>
+                <owl:hasValue>32-42%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Gelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#HealthBenefit -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#HealthBenefit">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>GelatoHealthBenefit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#Ingredient -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#Ingredient">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>GelatoIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#NaturalFlavor -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#NaturalFlavor">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/#Ingredient"/>
+        <rdfs:label>NaturalFlavor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#Nutrient -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#Nutrient">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>GelatoNutrient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#PopularFlavor -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#PopularFlavor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>GelatoPopularFlavor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#PreparationStep -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#PreparationStep">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
+                <owl:allValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This includes the basic preparation steps for the making of gelato.</rdfs:comment>
+        <rdfs:label>GelatoPreparationStep</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#Stabilizer -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#Stabilizer">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/#Ingredient"/>
+        <rdfs:label>Stabilizer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://gelatontology.com/Italy -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/Italy">
+        <rdf:type rdf:resource="http://gelatontology.com/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/frozen -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/frozen">
+        <rdf:type rdf:resource="http://gelatontology.com/Texture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/semi-frozen -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/semi-frozen">
+        <rdf:type rdf:resource="http://gelatontology.com/Texture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#addColorAndFlavor -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#addColorAndFlavor">
+        <rdf:type rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:label>addColorAndFlavor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#aging -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#aging">
+        <rdf:type rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <gelatontology:needsDuration>24 hours</gelatontology:needsDuration>
+        <gelatontology:needsTemperature>4°C</gelatontology:needsTemperature>
+        <rdfs:label>aging</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#alcohol -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#alcohol">
+        <rdf:type rdf:resource="http://gelatontology.com/#NaturalFlavor"/>
+        <rdfs:label>alcohol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#antioxidant -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#antioxidant">
+        <rdf:type rdf:resource="http://gelatontology.com/#Nutrient"/>
+        <rdfs:label>antioxidant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#antioxidantBenefit -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#antioxidantBenefit">
+        <rdf:type rdf:resource="http://gelatontology.com/#HealthBenefit"/>
+        <rdfs:label>antioxidantBenefit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#banana -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#banana">
+        <rdf:type rdf:resource="http://gelatontology.com/#PopularFlavor"/>
+        <rdfs:label>banana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#batchFreezing -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#batchFreezing">
+        <rdf:type rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:label>batchFreezing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#blending -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#blending">
+        <rdf:type rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:label>blending</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#calciumSourceBenefit -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#calciumSourceBenefit">
+        <rdf:type rdf:resource="http://gelatontology.com/#HealthBenefit"/>
+        <rdfs:label>calciumSourceBenefit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#carrageenan -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#carrageenan">
+        <rdf:type rdf:resource="http://gelatontology.com/#Stabilizer"/>
+        <rdfs:label>carrageenan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#chili -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#chili">
+        <rdf:type rdf:resource="http://gelatontology.com/#PopularFlavor"/>
+        <rdfs:label>chili</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#chocolate -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#chocolate">
+        <rdf:type rdf:resource="http://gelatontology.com/#PopularFlavor"/>
+        <rdfs:label>chocolate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#cocoaNib -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#cocoaNib">
+        <rdf:type rdf:resource="http://gelatontology.com/#NaturalFlavor"/>
+        <rdfs:label>cocoa nib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#cocoaPowder -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#cocoaPowder">
+        <rdf:type rdf:resource="http://gelatontology.com/#NaturalFlavor"/>
+        <rdfs:label>cocoa powder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#cooling -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#cooling">
+        <rdf:type rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <gelatontology:needsTemperature>below 4°C</gelatontology:needsTemperature>
+        <rdfs:label>cooling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#custard -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#custard">
+        <rdf:type rdf:resource="http://gelatontology.com/#PopularFlavor"/>
+        <rdfs:label>custard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#darkChocolate -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#darkChocolate">
+        <rdf:type rdf:resource="http://gelatontology.com/#PopularFlavor"/>
+        <rdfs:label>darkChocolate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#digestiveHealthBenefit -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#digestiveHealthBenefit">
+        <rdf:type rdf:resource="http://gelatontology.com/#HealthBenefit"/>
+        <rdfs:label>digestiveHealthBenefit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#eggYolk -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#eggYolk">
+        <rdf:type rdf:resource="http://gelatontology.com/#BasicIngredient"/>
+        <rdfs:label>eggYolk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#erythritol -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#erythritol">
+        <rdf:type rdf:resource="http://gelatontology.com/#AlternativeSweetener"/>
+        <rdfs:label>erythritol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#freshCream -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#freshCream">
+        <rdf:type rdf:resource="http://gelatontology.com/#BasicIngredient"/>
+        <rdfs:label>freshCream</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#fruit -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#fruit">
+        <rdf:type rdf:resource="http://gelatontology.com/#NaturalFlavor"/>
+        <rdfs:label>fruit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#guarGum -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#guarGum">
+        <rdf:type rdf:resource="http://gelatontology.com/#Stabilizer"/>
+        <rdfs:label>guarGum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#homogenization -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#homogenization">
+        <rdf:type rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <gelatontology:needsPressure>2000-2500 psi</gelatontology:needsPressure>
+        <rdfs:label>homogenization</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#honey -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#honey">
+        <rdf:type rdf:resource="http://gelatontology.com/#AlternativeSweetener"/>
+        <rdfs:label>honey</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#hydrationBenefit -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#hydrationBenefit">
+        <rdf:type rdf:resource="http://gelatontology.com/#HealthBenefit"/>
+        <rdfs:label>hydrationBenefit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#lemon -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#lemon">
+        <rdf:type rdf:resource="http://gelatontology.com/#PopularFlavor"/>
+        <rdfs:label>lemon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#locustBeanGum -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#locustBeanGum">
+        <rdf:type rdf:resource="http://gelatontology.com/#Stabilizer"/>
+        <rdfs:label>locustBeanGum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#milk -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#milk">
+        <rdf:type rdf:resource="http://gelatontology.com/#BasicIngredient"/>
+        <rdfs:label>milk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#mixPreparation -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#mixPreparation">
+        <rdf:type rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:label>mixPreparation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#pasteurization -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#pasteurization">
+        <rdf:type rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <gelatontology:needsTemperature>63-77°C</gelatontology:needsTemperature>
+        <rdfs:label>pasteurization</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#peach -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#peach">
+        <rdf:type rdf:resource="http://gelatontology.com/#PopularFlavor"/>
+        <rdfs:label>peach</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#pectin -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#pectin">
+        <rdf:type rdf:resource="http://gelatontology.com/#Stabilizer"/>
+        <rdfs:label>pectin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#phenolicCompound -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#phenolicCompound">
+        <rdf:type rdf:resource="http://gelatontology.com/#Nutrient"/>
+        <rdfs:label>phenolicCompound</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#skimmedMilkPowder -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#skimmedMilkPowder">
+        <rdf:type rdf:resource="http://gelatontology.com/#BasicIngredient"/>
+        <rdfs:label>skimmedMilkPowder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#spice -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#spice">
+        <rdf:type rdf:resource="http://gelatontology.com/#NaturalFlavor"/>
+        <rdfs:label>spice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#storage -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#storage">
+        <rdf:type rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:label>storage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#strawberry -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#strawberry">
+        <rdf:type rdf:resource="http://gelatontology.com/#PopularFlavor"/>
+        <rdfs:label>strawberry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#sugar -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#sugar">
+        <rdf:type rdf:resource="http://gelatontology.com/#BasicIngredient"/>
+        <rdfs:label>sugar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#trehalose -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#trehalose">
+        <rdf:type rdf:resource="http://gelatontology.com/#AlternativeSweetener"/>
+        <rdfs:label>trehalose</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#vitaminC -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#vitaminC">
+        <rdf:type rdf:resource="http://gelatontology.com/#Nutrient"/>
+        <rdfs:label>vitaminC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#vitaminCBenefit -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#vitaminCBenefit">
+        <rdf:type rdf:resource="http://gelatontology.com/#HealthBenefit"/>
+        <rdfs:label>vitaminCBenefit</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
