@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
+  --color-primary: #a32856;
   --color-secondary: #37373f;
 }
 
@@ -581,8 +581,8 @@ section {
 .about .call-us {
   left: 10%;
   right: 10%;
-  bottom: 10%;
-  background-color: #fff;
+  top: 10%;
+  background-color: #ffffffd5;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
   padding: 20px;
   text-align: center;
@@ -592,13 +592,15 @@ section {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 5px;
-  font-family: var(--font-default);
+  text-align: left;
+  font-family: var(--color-primary);
 }
 
 .about .call-us p {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  color: var(--font-default);
 }
 
 .about .content ul {
@@ -1089,7 +1091,7 @@ section {
 }
 
 .chefs .chef-member .member-img {
-  position: relative;
+  position: center;
   overflow: hidden;
 }
 

@@ -54,9 +54,9 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">The Project</a></li>
           <li><a href="#why-us">Competency Questions</a></li>
-          <li><a href="#testimonials">Knowledge Graph</a></li>
-          <li><a href="myDocumentation/doc/index-en.html">Ontology</a></li>
           <li><a href="#menu">Sparql Query</a></li>
+          <li><a href="#testimonials">Knowledge Graph</a></li>
+          <li><a href="myDocumentation/index-en.html" target="_blank">Ontology</a></li>
           <li><a href="#chefs">The Team</a></li>
           
         </ul>
@@ -71,7 +71,7 @@
       <div class="row justify-content-between gy-5">
         <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
           <h2 data-aos="fade-up">An Ontology of Gelato</h2>
-          <p data-aos="fade-up" data-aos-delay="100">This ontology describes the basic elements of Gelato, based on a scientific Article:<span><a href="https://www.emergentresearch.org/uploads/38/8699_pdf.pdf">"A review on Gelato: An Italian Delicacy"</a></span></p>
+          <p data-aos="fade-up" data-aos-delay="100">Based on a scientific Article:<span><a href="https://www.emergentresearch.org/uploads/38/8699_pdf.pdf" target="_blank">"A review on Gelato: An Italian Delicacy"</a></span>, this ontology describes the basic elements of <b>Gelato</b>: ingredients, nutrients, flavours, stabilizers, alternative sweeteners, health benefit are few of the components of a recipe that had origin in the 16th century in Italy. Today <b>Gelato</b> is still one of the most popular frozen desserts in the world. </br><em>Let's explore the reason why!</em></p>
           
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
@@ -89,13 +89,15 @@
 
         <div class="section-header">
           <h2>Ontology</h2>
-          <p>Learn More <span>About Us</span></p>
+          <p>The <span>Project</span></p>
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;" data-aos="fade-up" data-aos-delay="150">
-            <div class="call-us position-absolute">
-              <p>The making of gelatontology</p>
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/ice-cream-bg.jpg) ;" data-aos="fade-up" data-aos-delay="150">
+          <div class="call-us position-absolute">
+             <h4>The making of gelat<b>Ontology</b></h4>
+             <p>With our top to down ontology we would like to represent the knowledge collected in the selected <a href="https://www.emergentresearch.org/uploads/38/8699_pdf.pdf" target="_blank">article</a> which include several scientific studies and an overview about the historical origins and diffusion of these frozen food in the various countries of the world, comparing the two basically different kind of dessert. </p>
+             
             </div>
           </div>
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
@@ -114,7 +116,10 @@
                
               </p>
 
-              
+              <div class="position-relative mt-4">
+                <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+              </div>
             </div>
           </div>
         </div>
@@ -551,7 +556,7 @@
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
                   
-                    <a href="newKnowledgeGraph.svg" class="glightbox"><img src="newKnowledgeGraph.svg" class="menu-img img-fluid" alt=""></a>
+                    <a href="newKnowledgeGraph.svg" class="glightbox"><img src="newKnowledgeGraph.svg" class="img-fluid" alt=""></a>
                 </div>
               </div>
             </div>
@@ -567,132 +572,106 @@
     </section><!-- End Testimonials Section -->
 
     <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Sparql queries</h2>
-        </div>
-
-        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
-              <p class="description">What are the key nutrients in gelato?</p>
-              <p class="description">
-                <pre><code>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-  PREFIX owl: <http://www.w3.org/2002/07/owl#>
-  
-  SELECT ?nutrient
-  WHERE {
-    ?nutrient rdf:type <http://gelatontology.com/#Nutrient> .
-  }</code> </pre>
-             </p>
-            </div><!-- End Event item -->
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
-              <h3>Private Parties</h3>
-              <div class="price align-self-start">$289</div>
-              <p class="description">
-                In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut dolores ea assumenda et. Delectus saepe accusamus aspernatur.
-              </p>
-            </div><!-- End Event item -->
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
-              <h3>Birthday Parties</h3>
-              <div class="price align-self-start">$499</div>
-              <p class="description">
-                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
-              </p>
-            </div><!-- End Event item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Events Section -->
-
-    <!-- ======= Chefs Section ======= -->
+    
+    <!-- ======= Our team ======= -->
     <section id="chefs" class="chefs section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Chefs</h2>
-          <p>Our <span>Proffesional</span> Chefs</p>
+          <h2>The Team</h2>
+          <p>Our <span>Professional</span> Chefs</p>
         </div>
-
+        
         <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="chef-member">
-              <div class="member-img">
-                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Master Chef</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
-              </div>
-            </div>
-          </div><!-- End Chefs Member -->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="chef-member">
-              <div class="member-img">
-                <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Patissier</span>
-                <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
-              </div>
-            </div>
-          </div><!-- End Chefs Member -->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="chef-member">
               <div class="member-img">
                 <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
-              </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cook</span>
-                <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+                <h4>OOO</h4>
+                <span></span>
+                <p></p>
               </div>
             </div>
           </div><!-- End Chefs Member -->
 
-        </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+                </div>
+              <div class="member-info">
+                <h4>Van Le</h4>
+                <span>Master SPARQL Chef</span>
+                <p></p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Marida Di Lembo</h4>
+                <span>Junior Protegé Patissier</span>
+                <p></p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/chefs-4.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>OOO</h4>
+                <span></span>
+                <p></p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          
 
       </div>
     </section><!-- End Chefs Section -->
 
    
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>gallery</h2>
+          <p>Check <span>Our Gallery</span></p>
+        </div>
+
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
    
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= >
   <footer id="footer" class="footer">
 
     <div class="container">
@@ -702,8 +681,8 @@
           <div>
             <h4>Address</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022 - US<br>
+              The GelatOntology<br>
+              Università di Bologna, Italy<br>
             </p>
           </div>
 
@@ -742,11 +721,12 @@
         </div>
 
       </div>
-    </div>
+    </div -->
+    <footer id="footer" class="footer">
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>GelatOntology</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
