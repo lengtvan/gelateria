@@ -23,44 +23,6 @@
     
 
 
-    <!-- http://gelatontology.com/hasCompositionalDifferenceFrom -->
-
-
-    <owl:ObjectProperty rdf:about="http://gelatontology.com/hasCompositionalDifferenceFrom">
-        <rdfs:label>hasCompositionalDifferenceFrom</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://gelatontology.com/hasOrigin -->
-
-
-    <owl:ObjectProperty rdf:about="http://gelatontology.com/hasOrigin">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://gelatontology.com/#Gelato"/>
-        <rdfs:range rdf:resource="http://gelatontology.com/Country"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://gelatontology.com/hasTexture -->
-
-
-    <owl:ObjectProperty rdf:about="http://gelatontology.com/hasTexture">
-        <rdfs:label>hasTexture</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://gelatontology.com/hasTextureDifferenceFrom -->
-
-
-    <owl:ObjectProperty rdf:about="http://gelatontology.com/hasTextureDifferenceFrom">
-        <rdfs:label>hasTextureDifferenceFrom</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://gelatontology.com/#constitutes -->
 
 
@@ -81,6 +43,17 @@
     
 
 
+    <!-- http://gelatontology.com/#hasCompositionalDifferenceFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/#hasCompositionalDifferenceFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:comment>This property is used to highlight the difference between ice-cream and gelato in terms of composition.</rdfs:comment>
+        <rdfs:label>hasCompositionalDifferenceFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://gelatontology.com/#hasIngredient -->
 
 
@@ -97,6 +70,38 @@
     <owl:ObjectProperty rdf:about="http://gelatontology.com/#hasNutrient">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label>hasNutrient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/#hasOrigin -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/#hasOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://gelatontology.com/#Gelato"/>
+        <rdfs:range rdf:resource="http://gelatontology.com/#CountryOfOrigin"/>
+        <rdfs:label>hasOrigin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/#hasTexture -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/#hasTexture">
+        <rdfs:label>hasTexture</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/#hasTextureDifferenceFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/#hasTextureDifferenceFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:comment>This property is used to highlight the difference between ice-cream and gelato in terms of texture.</rdfs:comment>
+        <rdfs:label>hasTextureDifferenceFrom</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -137,92 +142,87 @@
     
 
 
-    <!-- http://gelatontology.com/hasFatPercentage -->
+    <!-- http://gelatontology.com/#hasFatPercentage -->
 
 
-    <owl:DatatypeProperty rdf:about="http://gelatontology.com/hasFatPercentage">
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/#hasFatPercentage">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://gelatontology.com/Ice-cream"/>
                     <rdf:Description rdf:about="http://gelatontology.com/#Gelato"/>
+                    <rdf:Description rdf:about="http://gelatontology.com/#Icecream"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:comment>This indicates the Milk Fat Percentage</rdfs:comment>
-        <rdfs:label>hasFatPercentage</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://gelatontology.com/hasMSNFPercentage -->
+    <!-- http://gelatontology.com/#hasMSNFPercentage -->
 
 
-    <owl:DatatypeProperty rdf:about="http://gelatontology.com/hasMSNFPercentage">
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/#hasMSNFPercentage">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://gelatontology.com/Ice-cream"/>
                     <rdf:Description rdf:about="http://gelatontology.com/#Gelato"/>
+                    <rdf:Description rdf:about="http://gelatontology.com/#Icecream"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:comment>This indicates the milk solid non fat percentage.</rdfs:comment>
-        <rdfs:label>hasMSNFPercentage</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://gelatontology.com/hasSEPercentage -->
+    <!-- http://gelatontology.com/#hasSEPercentage -->
 
 
-    <owl:DatatypeProperty rdf:about="http://gelatontology.com/hasSEPercentage">
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/#hasSEPercentage">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://gelatontology.com/Ice-cream"/>
                     <rdf:Description rdf:about="http://gelatontology.com/#Gelato"/>
+                    <rdf:Description rdf:about="http://gelatontology.com/#Icecream"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:comment>This indicates the Stabilizer and Emulsifier Percentage</rdfs:comment>
-        <rdfs:label>hasSEPercentage</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://gelatontology.com/hasSweetenerPercentage -->
+    <!-- http://gelatontology.com/#hasSweetenerPercentage -->
 
 
-    <owl:DatatypeProperty rdf:about="http://gelatontology.com/hasSweetenerPercentage">
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/#hasSweetenerPercentage">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://gelatontology.com/Ice-cream"/>
                     <rdf:Description rdf:about="http://gelatontology.com/#Gelato"/>
+                    <rdf:Description rdf:about="http://gelatontology.com/#Icecream"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:comment>This indicates the percentage of sweetener.</rdfs:comment>
-        <rdfs:label>hasSweetenerPercentage</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://gelatontology.com/hasTSPercentage -->
+    <!-- http://gelatontology.com/#hasTSPercentage -->
 
 
-    <owl:DatatypeProperty rdf:about="http://gelatontology.com/hasTSPercentage">
+    <owl:DatatypeProperty rdf:about="http://gelatontology.com/#hasTSPercentage">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://gelatontology.com/Ice-cream"/>
                     <rdf:Description rdf:about="http://gelatontology.com/#Gelato"/>
+                    <rdf:Description rdf:about="http://gelatontology.com/#Icecream"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:comment>This indicates the total solids percentage.</rdfs:comment>
-        <rdfs:label>hasTSPercentage</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -275,92 +275,6 @@
     
 
 
-    <!-- http://gelatontology.com/Country -->
-
-
-    <owl:Class rdf:about="http://gelatontology.com/Country">
-        <rdfs:label>CountryOfOrigin</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://gelatontology.com/Ice-cream -->
-
-
-    <owl:Class rdf:about="http://gelatontology.com/Ice-cream">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasTexture"/>
-                <owl:someValuesFrom rdf:resource="http://gelatontology.com/Texture"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasTexture"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://gelatontology.com/frozen"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasFatPercentage"/>
-                <owl:hasValue>8-10%</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasMSNFPercentage"/>
-                <owl:hasValue>10-12%</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasSEPercentage"/>
-                <owl:hasValue>0.4%</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasSweetenerPercentage"/>
-                <owl:hasValue>15-17%</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasTSPercentage"/>
-                <owl:hasValue>32-36%</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://gelatontology.com/Texture -->
-
-
-    <owl:Class rdf:about="http://gelatontology.com/Texture">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
-                <owl:someValuesFrom rdf:resource="http://gelatontology.com/Ice-cream"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
-                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>FrozenDessertTexture</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://gelatontology.com/#AlternativeSweetener -->
 
 
@@ -383,44 +297,52 @@
     
 
 
+    <!-- http://gelatontology.com/#CountryOfOrigin -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#CountryOfOrigin">
+        <rdfs:comment>This class includes the country of origin of gelato. It has 1 member: Italy.</rdfs:comment>
+        <rdfs:label>GelatoCountryOfOrigin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#FrozenDessertTexture -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#FrozenDessertTexture">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Icecream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This class contains instances that characterize the texture of frozen dessert, namely frozen and semi-frozen. The instances are used for the comparison of texture between gelato and ice-cream.</rdfs:comment>
+        <rdfs:label>FrozenDessertTexture</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://gelatontology.com/#Gelato -->
 
 
     <owl:Class rdf:about="http://gelatontology.com/#Gelato">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasCompositionalDifferenceFrom"/>
-                <owl:someValuesFrom rdf:resource="http://gelatontology.com/Ice-cream"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasTexture"/>
-                <owl:someValuesFrom rdf:resource="http://gelatontology.com/Texture"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasTexture"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://gelatontology.com/semi-frozen"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasTextureDifferenceFrom"/>
-                <owl:someValuesFrom rdf:resource="http://gelatontology.com/Ice-cream"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasBenefit"/>
                 <owl:someValuesFrom rdf:resource="http://gelatontology.com/#HealthBenefit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasCompositionalDifferenceFrom"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Icecream"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -437,11 +359,35 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasOrigin"/>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#FrozenDessertTexture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasTexture"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://gelatontology.com/#semi-frozen"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasTextureDifferenceFrom"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Icecream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasOrigin"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://gelatontology.com/Italy"/>
+                            <rdf:Description rdf:about="http://gelatontology.com/#Italy"/>
                         </owl:oneOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -449,31 +395,31 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasFatPercentage"/>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasFatPercentage"/>
                 <owl:hasValue>4-8%</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasMSNFPercentage"/>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasMSNFPercentage"/>
                 <owl:hasValue>9-12%</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasSEPercentage"/>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasSEPercentage"/>
                 <owl:hasValue>0.5%</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasSweetenerPercentage"/>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasSweetenerPercentage"/>
                 <owl:hasValue>15-24%</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/hasTSPercentage"/>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasTSPercentage"/>
                 <owl:hasValue>32-42%</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -492,7 +438,66 @@
                 <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class refers to all the health benefits of gelato.</rdfs:comment>
         <rdfs:label>GelatoHealthBenefit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#Icecream -->
+
+
+    <owl:Class rdf:about="http://gelatontology.com/#Icecream">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#FrozenDessertTexture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasTexture"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://gelatontology.com/#frozen"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasFatPercentage"/>
+                <owl:hasValue>8-10%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasMSNFPercentage"/>
+                <owl:hasValue>10-12%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasSEPercentage"/>
+                <owl:hasValue>0.4%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasSweetenerPercentage"/>
+                <owl:hasValue>15-17%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasTSPercentage"/>
+                <owl:hasValue>32-36%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Ice-cream is mentioned in the article as an entity that is often compared to gelato, but has a completely different nutritional and compositional profiles as well as texture.</rdfs:comment>
+        <rdfs:label>Ice-cream</rdfs:label>
     </owl:Class>
     
 
@@ -507,6 +512,7 @@
                 <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class refers to all ingredients that make up gelato.</rdfs:comment>
         <rdfs:label>GelatoIngredient</rdfs:label>
     </owl:Class>
     
@@ -517,6 +523,7 @@
 
     <owl:Class rdf:about="http://gelatontology.com/#NaturalFlavor">
         <rdfs:subClassOf rdf:resource="http://gelatontology.com/#Ingredient"/>
+        <rdfs:comment>This sub-class includes instances of natural flavors often added to gelato.</rdfs:comment>
         <rdfs:label>NaturalFlavor</rdfs:label>
     </owl:Class>
     
@@ -532,6 +539,7 @@
                 <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class refers to the nutrients in the nutritional profile of gelato.</rdfs:comment>
         <rdfs:label>GelatoNutrient</rdfs:label>
     </owl:Class>
     
@@ -547,6 +555,7 @@
                 <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class includes popular flavors of gelato according to the article.</rdfs:comment>
         <rdfs:label>GelatoPopularFlavor</rdfs:label>
     </owl:Class>
     
@@ -573,6 +582,7 @@
 
     <owl:Class rdf:about="http://gelatontology.com/#Stabilizer">
         <rdfs:subClassOf rdf:resource="http://gelatontology.com/#Ingredient"/>
+        <rdfs:comment>This sub-class includes instances of stabilizers often used in the making of gelato.</rdfs:comment>
         <rdfs:label>Stabilizer</rdfs:label>
     </owl:Class>
     
@@ -590,29 +600,11 @@
     
 
 
-    <!-- http://gelatontology.com/Italy -->
+    <!-- http://gelatontology.com/#Italy -->
 
 
-    <owl:NamedIndividual rdf:about="http://gelatontology.com/Italy">
-        <rdf:type rdf:resource="http://gelatontology.com/Country"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://gelatontology.com/frozen -->
-
-
-    <owl:NamedIndividual rdf:about="http://gelatontology.com/frozen">
-        <rdf:type rdf:resource="http://gelatontology.com/Texture"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://gelatontology.com/semi-frozen -->
-
-
-    <owl:NamedIndividual rdf:about="http://gelatontology.com/semi-frozen">
-        <rdf:type rdf:resource="http://gelatontology.com/Texture"/>
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#Italy">
+        <rdf:type rdf:resource="http://gelatontology.com/#CountryOfOrigin"/>
     </owl:NamedIndividual>
     
 
@@ -830,6 +822,15 @@
     
 
 
+    <!-- http://gelatontology.com/#frozen -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#frozen">
+        <rdf:type rdf:resource="http://gelatontology.com/#FrozenDessertTexture"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://gelatontology.com/#fruit -->
 
 
@@ -958,6 +959,15 @@
     <owl:NamedIndividual rdf:about="http://gelatontology.com/#phenolicCompound">
         <rdf:type rdf:resource="http://gelatontology.com/#Nutrient"/>
         <rdfs:label>phenolicCompound</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/#semi-frozen -->
+
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/#semi-frozen">
+        <rdf:type rdf:resource="http://gelatontology.com/#FrozenDessertTexture"/>
     </owl:NamedIndividual>
     
 

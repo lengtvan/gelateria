@@ -8,24 +8,6 @@
 # #################################################################
 # 
 # 
-# http://gelatontology.com/hasCompositionalDifferenceFrom
-<http://gelatontology.com/hasCompositionalDifferenceFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://gelatontology.com/hasCompositionalDifferenceFrom> <http://www.w3.org/2000/01/rdf-schema#label> "hasCompositionalDifferenceFrom" .
-# 
-# http://gelatontology.com/hasOrigin
-<http://gelatontology.com/hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://gelatontology.com/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://gelatontology.com/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gelatontology.com/#Gelato> .
-<http://gelatontology.com/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://gelatontology.com/Country> .
-# 
-# http://gelatontology.com/hasTexture
-<http://gelatontology.com/hasTexture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://gelatontology.com/hasTexture> <http://www.w3.org/2000/01/rdf-schema#label> "hasTexture" .
-# 
-# http://gelatontology.com/hasTextureDifferenceFrom
-<http://gelatontology.com/hasTextureDifferenceFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://gelatontology.com/hasTextureDifferenceFrom> <http://www.w3.org/2000/01/rdf-schema#label> "hasTextureDifferenceFrom" .
-# 
 # http://gelatontology.com/#constitutes
 <http://gelatontology.com/#constitutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://gelatontology.com/#constitutes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
@@ -36,6 +18,12 @@
 <http://gelatontology.com/#hasBenefit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://gelatontology.com/#hasBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "hasBenefit" .
 # 
+# http://gelatontology.com/#hasCompositionalDifferenceFrom
+<http://gelatontology.com/#hasCompositionalDifferenceFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gelatontology.com/#hasCompositionalDifferenceFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://gelatontology.com/#hasCompositionalDifferenceFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to highlight the difference between ice-cream and gelato in terms of composition." .
+<http://gelatontology.com/#hasCompositionalDifferenceFrom> <http://www.w3.org/2000/01/rdf-schema#label> "hasCompositionalDifferenceFrom" .
+# 
 # http://gelatontology.com/#hasIngredient
 <http://gelatontology.com/#hasIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://gelatontology.com/#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
@@ -45,6 +33,23 @@
 <http://gelatontology.com/#hasNutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://gelatontology.com/#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://gelatontology.com/#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#label> "hasNutrient" .
+# 
+# http://gelatontology.com/#hasOrigin
+<http://gelatontology.com/#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gelatontology.com/#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://gelatontology.com/#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://gelatontology.com/#CountryOfOrigin> .
+<http://gelatontology.com/#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasOrigin" .
+# 
+# http://gelatontology.com/#hasTexture
+<http://gelatontology.com/#hasTexture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gelatontology.com/#hasTexture> <http://www.w3.org/2000/01/rdf-schema#label> "hasTexture" .
+# 
+# http://gelatontology.com/#hasTextureDifferenceFrom
+<http://gelatontology.com/#hasTextureDifferenceFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gelatontology.com/#hasTextureDifferenceFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://gelatontology.com/#hasTextureDifferenceFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to highlight the difference between ice-cream and gelato in terms of texture." .
+<http://gelatontology.com/#hasTextureDifferenceFrom> <http://www.w3.org/2000/01/rdf-schema#label> "hasTextureDifferenceFrom" .
 # 
 # http://gelatontology.com/#isPopularFor
 <http://gelatontology.com/#isPopularFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -69,75 +74,70 @@
 # #################################################################
 # 
 # 
-# http://gelatontology.com/hasFatPercentage
-<http://gelatontology.com/hasFatPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://gelatontology.com/hasFatPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+# http://gelatontology.com/#hasFatPercentage
+<http://gelatontology.com/#hasFatPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://gelatontology.com/#hasFatPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/Ice-cream> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Gelato> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Gelato> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Icecream> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://gelatontology.com/hasFatPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the Milk Fat Percentage" .
-<http://gelatontology.com/hasFatPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "hasFatPercentage" .
+<http://gelatontology.com/#hasFatPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the Milk Fat Percentage" .
 # 
-# http://gelatontology.com/hasMSNFPercentage
-<http://gelatontology.com/hasMSNFPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://gelatontology.com/hasMSNFPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+# http://gelatontology.com/#hasMSNFPercentage
+<http://gelatontology.com/#hasMSNFPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://gelatontology.com/#hasMSNFPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/Ice-cream> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Gelato> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Gelato> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Icecream> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://gelatontology.com/hasMSNFPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the milk solid non fat percentage." .
-<http://gelatontology.com/hasMSNFPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "hasMSNFPercentage" .
+<http://gelatontology.com/#hasMSNFPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the milk solid non fat percentage." .
 # 
-# http://gelatontology.com/hasSEPercentage
-<http://gelatontology.com/hasSEPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://gelatontology.com/hasSEPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+# http://gelatontology.com/#hasSEPercentage
+<http://gelatontology.com/#hasSEPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://gelatontology.com/#hasSEPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/Ice-cream> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Gelato> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Gelato> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Icecream> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://gelatontology.com/hasSEPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the Stabilizer and Emulsifier Percentage" .
-<http://gelatontology.com/hasSEPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "hasSEPercentage" .
+<http://gelatontology.com/#hasSEPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the Stabilizer and Emulsifier Percentage" .
 # 
-# http://gelatontology.com/hasSweetenerPercentage
-<http://gelatontology.com/hasSweetenerPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://gelatontology.com/hasSweetenerPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+# http://gelatontology.com/#hasSweetenerPercentage
+<http://gelatontology.com/#hasSweetenerPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://gelatontology.com/#hasSweetenerPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/Ice-cream> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Gelato> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Gelato> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Icecream> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://gelatontology.com/hasSweetenerPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the percentage of sweetener." .
-<http://gelatontology.com/hasSweetenerPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "hasSweetenerPercentage" .
+<http://gelatontology.com/#hasSweetenerPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the percentage of sweetener." .
 # 
-# http://gelatontology.com/hasTSPercentage
-<http://gelatontology.com/hasTSPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://gelatontology.com/hasTSPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+# http://gelatontology.com/#hasTSPercentage
+<http://gelatontology.com/#hasTSPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://gelatontology.com/#hasTSPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/Ice-cream> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Gelato> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Gelato> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Icecream> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://gelatontology.com/hasTSPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the total solids percentage." .
-<http://gelatontology.com/hasTSPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "hasTSPercentage" .
+<http://gelatontology.com/#hasTSPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the total solids percentage." .
 # 
 # http://gelatontology.com/#needsDuration
 <http://gelatontology.com/#needsDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -169,58 +169,6 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #################################################################
 # 
 # 
-# http://gelatontology.com/Country
-<http://gelatontology.com/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://gelatontology.com/Country> <http://www.w3.org/2000/01/rdf-schema#label> "CountryOfOrigin" .
-# 
-# http://gelatontology.com/Ice-cream
-<http://gelatontology.com/Ice-cream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://gelatontology.com/Ice-cream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasTexture> .
-_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/Texture> .
-<http://gelatontology.com/Ice-cream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasTexture> .
-_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid18 <http://www.w3.org/2002/07/owl#oneOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/frozen> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://gelatontology.com/Ice-cream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasFatPercentage> .
-_:genid20 <http://www.w3.org/2002/07/owl#hasValue> "8-10%" .
-<http://gelatontology.com/Ice-cream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasMSNFPercentage> .
-_:genid21 <http://www.w3.org/2002/07/owl#hasValue> "10-12%" .
-<http://gelatontology.com/Ice-cream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasSEPercentage> .
-_:genid22 <http://www.w3.org/2002/07/owl#hasValue> "0.4%" .
-<http://gelatontology.com/Ice-cream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasSweetenerPercentage> .
-_:genid23 <http://www.w3.org/2002/07/owl#hasValue> "15-17%" .
-<http://gelatontology.com/Ice-cream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasTSPercentage> .
-_:genid24 <http://www.w3.org/2002/07/owl#hasValue> "32-36%" .
-# 
-# http://gelatontology.com/Texture
-<http://gelatontology.com/Texture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://gelatontology.com/Texture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
-_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/Ice-cream> .
-<http://gelatontology.com/Texture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
-_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
-<http://gelatontology.com/Texture> <http://www.w3.org/2000/01/rdf-schema#label> "FrozenDessertTexture" .
-# 
 # http://gelatontology.com/#AlternativeSweetener
 <http://gelatontology.com/#AlternativeSweetener> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://gelatontology.com/#AlternativeSweetener> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gelatontology.com/#Ingredient> .
@@ -233,79 +181,136 @@ _:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.c
 <http://gelatontology.com/#BasicIngredient> <http://www.w3.org/2000/01/rdf-schema#comment> "This class includes the basic ingredients to make gelato" .
 <http://gelatontology.com/#BasicIngredient> <http://www.w3.org/2000/01/rdf-schema#label> "BasicIngredient" .
 # 
+# http://gelatontology.com/#CountryOfOrigin
+<http://gelatontology.com/#CountryOfOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#CountryOfOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "This class includes the country of origin of gelato. It has 1 member: Italy." .
+<http://gelatontology.com/#CountryOfOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "GelatoCountryOfOrigin" .
+# 
+# http://gelatontology.com/#FrozenDessertTexture
+<http://gelatontology.com/#FrozenDessertTexture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#FrozenDessertTexture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#FrozenDessertTexture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Icecream> .
+<http://gelatontology.com/#FrozenDessertTexture> <http://www.w3.org/2000/01/rdf-schema#comment> "This class contains instances that characterize the texture of frozen dessert, namely frozen and semi-frozen. The instances are used for the comparison of texture between gelato and ice-cream." .
+<http://gelatontology.com/#FrozenDessertTexture> <http://www.w3.org/2000/01/rdf-schema#label> "FrozenDessertTexture" .
+# 
 # http://gelatontology.com/#Gelato
 <http://gelatontology.com/#Gelato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasBenefit> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#HealthBenefit> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasCompositionalDifferenceFrom> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Icecream> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasIngredient> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Ingredient> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasNutrient> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Nutrient> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasTexture> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#FrozenDessertTexture> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasTexture> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid24 <http://www.w3.org/2002/07/owl#oneOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#semi-frozen> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasTextureDifferenceFrom> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Icecream> .
 <http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasCompositionalDifferenceFrom> .
-_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/Ice-cream> .
-<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasTexture> .
-_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/Texture> .
-<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasTexture> .
-_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid30 <http://www.w3.org/2002/07/owl#oneOf> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/semi-frozen> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasOrigin> .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid28 <http://www.w3.org/2002/07/owl#oneOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#Italy> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasFatPercentage> .
+_:genid30 <http://www.w3.org/2002/07/owl#hasValue> "4-8%" .
+<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasMSNFPercentage> .
+_:genid31 <http://www.w3.org/2002/07/owl#hasValue> "9-12%" .
 <http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasTextureDifferenceFrom> .
-_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/Ice-cream> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasSEPercentage> .
+_:genid32 <http://www.w3.org/2002/07/owl#hasValue> "0.5%" .
 <http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasBenefit> .
-_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#HealthBenefit> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasSweetenerPercentage> .
+_:genid33 <http://www.w3.org/2002/07/owl#hasValue> "15-24%" .
 <http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasIngredient> .
-_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Ingredient> .
-<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasNutrient> .
-_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Nutrient> .
-<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasOrigin> .
-_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid37 <http://www.w3.org/2002/07/owl#oneOf> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/Italy> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasFatPercentage> .
-_:genid39 <http://www.w3.org/2002/07/owl#hasValue> "4-8%" .
-<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasMSNFPercentage> .
-_:genid40 <http://www.w3.org/2002/07/owl#hasValue> "9-12%" .
-<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasSEPercentage> .
-_:genid41 <http://www.w3.org/2002/07/owl#hasValue> "0.5%" .
-<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasSweetenerPercentage> .
-_:genid42 <http://www.w3.org/2002/07/owl#hasValue> "15-24%" .
-<http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/hasTSPercentage> .
-_:genid43 <http://www.w3.org/2002/07/owl#hasValue> "32-42%" .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasTSPercentage> .
+_:genid34 <http://www.w3.org/2002/07/owl#hasValue> "32-42%" .
 <http://gelatontology.com/#Gelato> <http://www.w3.org/2000/01/rdf-schema#label> "Gelato" .
 # 
 # http://gelatontology.com/#HealthBenefit
 <http://gelatontology.com/#HealthBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://gelatontology.com/#HealthBenefit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
-_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#HealthBenefit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#HealthBenefit> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to all the health benefits of gelato." .
 <http://gelatontology.com/#HealthBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "GelatoHealthBenefit" .
+# 
+# http://gelatontology.com/#Icecream
+<http://gelatontology.com/#Icecream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gelatontology.com/#Icecream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasTexture> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#FrozenDessertTexture> .
+<http://gelatontology.com/#Icecream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasTexture> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid38 <http://www.w3.org/2002/07/owl#oneOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gelatontology.com/#frozen> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://gelatontology.com/#Icecream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasFatPercentage> .
+_:genid40 <http://www.w3.org/2002/07/owl#hasValue> "8-10%" .
+<http://gelatontology.com/#Icecream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasMSNFPercentage> .
+_:genid41 <http://www.w3.org/2002/07/owl#hasValue> "10-12%" .
+<http://gelatontology.com/#Icecream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasSEPercentage> .
+_:genid42 <http://www.w3.org/2002/07/owl#hasValue> "0.4%" .
+<http://gelatontology.com/#Icecream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasSweetenerPercentage> .
+_:genid43 <http://www.w3.org/2002/07/owl#hasValue> "15-17%" .
+<http://gelatontology.com/#Icecream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#hasTSPercentage> .
+_:genid44 <http://www.w3.org/2002/07/owl#hasValue> "32-36%" .
+<http://gelatontology.com/#Icecream> <http://www.w3.org/2000/01/rdf-schema#comment> "Ice-cream is mentioned in the article as an entity that is often compared to gelato, but has a completely different nutritional and compositional profiles as well as texture." .
+<http://gelatontology.com/#Icecream> <http://www.w3.org/2000/01/rdf-schema#label> "Ice-cream" .
 # 
 # http://gelatontology.com/#Ingredient
 <http://gelatontology.com/#Ingredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -313,11 +318,13 @@ _:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.c
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
 _:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#Ingredient> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to all ingredients that make up gelato." .
 <http://gelatontology.com/#Ingredient> <http://www.w3.org/2000/01/rdf-schema#label> "GelatoIngredient" .
 # 
 # http://gelatontology.com/#NaturalFlavor
 <http://gelatontology.com/#NaturalFlavor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://gelatontology.com/#NaturalFlavor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gelatontology.com/#Ingredient> .
+<http://gelatontology.com/#NaturalFlavor> <http://www.w3.org/2000/01/rdf-schema#comment> "This sub-class includes instances of natural flavors often added to gelato." .
 <http://gelatontology.com/#NaturalFlavor> <http://www.w3.org/2000/01/rdf-schema#label> "NaturalFlavor" .
 # 
 # http://gelatontology.com/#Nutrient
@@ -326,6 +333,7 @@ _:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.c
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
 _:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#Nutrient> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the nutrients in the nutritional profile of gelato." .
 <http://gelatontology.com/#Nutrient> <http://www.w3.org/2000/01/rdf-schema#label> "GelatoNutrient" .
 # 
 # http://gelatontology.com/#PopularFlavor
@@ -334,6 +342,7 @@ _:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.c
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://gelatontology.com/#constitutes> .
 _:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gelatontology.com/#Gelato> .
+<http://gelatontology.com/#PopularFlavor> <http://www.w3.org/2000/01/rdf-schema#comment> "This class includes popular flavors of gelato according to the article." .
 <http://gelatontology.com/#PopularFlavor> <http://www.w3.org/2000/01/rdf-schema#label> "GelatoPopularFlavor" .
 # 
 # http://gelatontology.com/#PreparationStep
@@ -348,6 +357,7 @@ _:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://gelatontology.co
 # http://gelatontology.com/#Stabilizer
 <http://gelatontology.com/#Stabilizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://gelatontology.com/#Stabilizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gelatontology.com/#Ingredient> .
+<http://gelatontology.com/#Stabilizer> <http://www.w3.org/2000/01/rdf-schema#comment> "This sub-class includes instances of stabilizers often used in the making of gelato." .
 <http://gelatontology.com/#Stabilizer> <http://www.w3.org/2000/01/rdf-schema#label> "Stabilizer" .
 # 
 # 
@@ -359,17 +369,9 @@ _:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://gelatontology.co
 # #################################################################
 # 
 # 
-# http://gelatontology.com/Italy
-<http://gelatontology.com/Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://gelatontology.com/Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/Country> .
-# 
-# http://gelatontology.com/frozen
-<http://gelatontology.com/frozen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://gelatontology.com/frozen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/Texture> .
-# 
-# http://gelatontology.com/semi-frozen
-<http://gelatontology.com/semi-frozen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://gelatontology.com/semi-frozen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/Texture> .
+# http://gelatontology.com/#Italy
+<http://gelatontology.com/#Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#CountryOfOrigin> .
 # 
 # http://gelatontology.com/#addColorAndFlavor
 <http://gelatontology.com/#addColorAndFlavor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -479,6 +481,10 @@ _:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://gelatontology.co
 <http://gelatontology.com/#freshCream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#BasicIngredient> .
 <http://gelatontology.com/#freshCream> <http://www.w3.org/2000/01/rdf-schema#label> "freshCream" .
 # 
+# http://gelatontology.com/#frozen
+<http://gelatontology.com/#frozen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#frozen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#FrozenDessertTexture> .
+# 
 # http://gelatontology.com/#fruit
 <http://gelatontology.com/#fruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://gelatontology.com/#fruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#NaturalFlavor> .
@@ -545,6 +551,10 @@ _:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://gelatontology.co
 <http://gelatontology.com/#phenolicCompound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://gelatontology.com/#phenolicCompound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#Nutrient> .
 <http://gelatontology.com/#phenolicCompound> <http://www.w3.org/2000/01/rdf-schema#label> "phenolicCompound" .
+# 
+# http://gelatontology.com/#semi-frozen
+<http://gelatontology.com/#semi-frozen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://gelatontology.com/#semi-frozen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://gelatontology.com/#FrozenDessertTexture> .
 # 
 # http://gelatontology.com/#skimmedMilkPowder
 <http://gelatontology.com/#skimmedMilkPowder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
