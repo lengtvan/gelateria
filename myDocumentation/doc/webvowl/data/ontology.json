@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://gelatontology.com/", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "http://gelatontology.com/", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://gelatontology.com" ],
     "iri" : "http://gelatontology.com/"
   },
   "namespace" : [ ],
@@ -10,86 +10,95 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
     "type" : "owl:Class"
   }, {
     "id" : "5",
     "type" : "owl:Class"
   }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
     "id" : "8",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "9",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "22",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "23",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "24",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "25",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "21",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "11",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "26",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "27",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "28",
-    "type" : "owl:Class"
-  }, {
-    "id" : "29",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "31",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "20",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "34",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "35",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
     "type" : "owl:Class"
   }, {
     "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "46",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "3",
+    "id" : "60",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "33",
     "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
   } ],
   "classAttribute" : [ {
     "iri" : "http://gelatontology.com/#PopularFlavor",
@@ -159,7 +168,15 @@
     "comment" : {
       "undefined" : "This class includes popular flavors of gelato according to the article."
     },
-    "id" : "0"
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://gelatontology.com/#AlternativeSweetener",
     "baseIri" : "http://gelatontology.com/",
@@ -169,18 +186,18 @@
       "undefined" : "AlternativeSweetener"
     },
     "individuals" : [ {
-      "iri" : "http://gelatontology.com/#trehalose",
-      "baseIri" : "http://gelatontology.com/",
-      "labels" : {
-        "IRI-based" : "trehalose",
-        "undefined" : "trehalose"
-      }
-    }, {
       "iri" : "http://gelatontology.com/#erythritol",
       "baseIri" : "http://gelatontology.com/",
       "labels" : {
         "IRI-based" : "erythritol",
         "undefined" : "erythritol"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#trehalose",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "trehalose",
+        "undefined" : "trehalose"
       }
     }, {
       "iri" : "http://gelatontology.com/#honey",
@@ -193,8 +210,8 @@
     "comment" : {
       "undefined" : "This class includes instances of the most popular alternative sweetener often used to make gelato."
     },
-    "id" : "4",
-    "superClasses" : [ "3" ]
+    "id" : "3",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://gelatontology.com/#PreparationStep",
     "baseIri" : "http://gelatontology.com/",
@@ -211,18 +228,18 @@
         "undefined" : "blending"
       }
     }, {
-      "iri" : "http://gelatontology.com/#pasteurization",
-      "baseIri" : "http://gelatontology.com/",
-      "labels" : {
-        "IRI-based" : "pasteurization",
-        "undefined" : "pasteurization"
-      }
-    }, {
       "iri" : "http://gelatontology.com/#batchFreezing",
       "baseIri" : "http://gelatontology.com/",
       "labels" : {
         "IRI-based" : "batchFreezing",
         "undefined" : "batchFreezing"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#pasteurization",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "pasteurization",
+        "undefined" : "pasteurization"
       }
     }, {
       "iri" : "http://gelatontology.com/#cooling",
@@ -270,7 +287,15 @@
     "comment" : {
       "undefined" : "This includes the basic preparation steps for the making of gelato."
     },
-    "id" : "5"
+    "id" : "5",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://gelatontology.com/#Nutrient",
     "baseIri" : "http://gelatontology.com/",
@@ -304,70 +329,61 @@
     "comment" : {
       "undefined" : "This class refers to the nutrients in the nutritional profile of gelato."
     },
+    "id" : "7",
+    "superClasses" : [ "1" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "10" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "8"
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "9",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "22",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "23",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "24",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
+    "instances" : 0,
+    "union" : [ "9", "10" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "24"
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "25",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "IRI-based" : "float"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "21",
+    "instances" : 0,
+    "union" : [ "9", "10" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "11",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "instances" : 0,
+    "union" : [ "9", "10" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "21"
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "26",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "27",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "IRI-based" : "string"
     }
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "10" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "28"
   }, {
     "iri" : "http://gelatontology.com/#Icecream",
     "baseIri" : "http://gelatontology.com/",
@@ -379,17 +395,8 @@
     "comment" : {
       "undefined" : "Ice-cream is mentioned in the article as an entity that is often compared to gelato, but has a completely different nutritional and compositional profiles as well as texture."
     },
-    "id" : "28"
-  }, {
-    "instances" : 0,
-    "union" : [ "30", "28" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "29"
-  }, {
-    "instances" : 0,
-    "union" : [ "30", "28" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "31"
+    "id" : "10",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://gelatontology.com/#Gelato",
     "baseIri" : "http://gelatontology.com/",
@@ -398,29 +405,8 @@
       "IRI-based" : "Gelato",
       "undefined" : "Gelato"
     },
-    "id" : "30"
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "32",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "30", "28" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "20"
-  }, {
-    "instances" : 0,
-    "union" : [ "30", "28" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "34"
-  }, {
-    "instances" : 0,
-    "union" : [ "30", "28" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "35"
+    "id" : "9",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://gelatontology.com/#NaturalFlavor",
     "baseIri" : "http://gelatontology.com/",
@@ -437,18 +423,18 @@
         "undefined" : "cocoa powder"
       }
     }, {
-      "iri" : "http://gelatontology.com/#spice",
-      "baseIri" : "http://gelatontology.com/",
-      "labels" : {
-        "IRI-based" : "spice",
-        "undefined" : "spice"
-      }
-    }, {
       "iri" : "http://gelatontology.com/#fruit",
       "baseIri" : "http://gelatontology.com/",
       "labels" : {
         "IRI-based" : "fruit",
         "undefined" : "fruit"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#spice",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "spice",
+        "undefined" : "spice"
       }
     }, {
       "iri" : "http://gelatontology.com/#alcohol",
@@ -468,8 +454,27 @@
     "comment" : {
       "undefined" : "This sub-class includes instances of natural flavors often added to gelato."
     },
-    "id" : "2",
-    "superClasses" : [ "3" ]
+    "id" : "41",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://gelatontology.com/#GelatoResearchArticle",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GelatoResearchArticle",
+      "undefined" : "GelatoResearchArticle"
+    },
+    "individuals" : [ {
+      "iri" : "http://gelatontology.com/A_review_on_Gelato:_An_Italian_delicacy",
+      "baseIri" : "http://gelatontology.com",
+      "labels" : {
+        "IRI-based" : "A_review_on_Gelato:_An_Italian_delicacy"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "This class includes research articles about gelato as instances."
+    },
+    "id" : "43"
   }, {
     "iri" : "http://gelatontology.com/#Stabilizer",
     "baseIri" : "http://gelatontology.com/",
@@ -510,8 +515,39 @@
     "comment" : {
       "undefined" : "This sub-class includes instances of stabilizers often used in the making of gelato."
     },
-    "id" : "54",
-    "superClasses" : [ "3" ]
+    "id" : "58",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://gelatontology.com/GelatoResearchAuthor",
+    "baseIri" : "http://gelatontology.com",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GelatoResearchAuthor",
+      "undefined" : "GelatoResearchAuthor"
+    },
+    "individuals" : [ {
+      "iri" : "http://gelatontology.com/Sarang_Kanse",
+      "baseIri" : "http://gelatontology.com",
+      "labels" : {
+        "IRI-based" : "Sarang_Kanse"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/Rekha_Rani",
+      "baseIri" : "http://gelatontology.com",
+      "labels" : {
+        "IRI-based" : "Rekha_Rani"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/Shuvam_Shingh",
+      "baseIri" : "http://gelatontology.com",
+      "labels" : {
+        "IRI-based" : "Shuvam_Shingh"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "This class includes instances that are authors of research articles on gelato."
+    },
+    "id" : "60"
   }, {
     "iri" : "http://gelatontology.com/#HealthBenefit",
     "baseIri" : "http://gelatontology.com/",
@@ -521,18 +557,18 @@
       "undefined" : "GelatoHealthBenefit"
     },
     "individuals" : [ {
-      "iri" : "http://gelatontology.com/#calciumSourceBenefit",
-      "baseIri" : "http://gelatontology.com/",
-      "labels" : {
-        "IRI-based" : "calciumSourceBenefit",
-        "undefined" : "calciumSourceBenefit"
-      }
-    }, {
       "iri" : "http://gelatontology.com/#vitaminCBenefit",
       "baseIri" : "http://gelatontology.com/",
       "labels" : {
         "IRI-based" : "vitaminCBenefit",
         "undefined" : "vitaminCBenefit"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#calciumSourceBenefit",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "calciumSourceBenefit",
+        "undefined" : "calciumSourceBenefit"
       }
     }, {
       "iri" : "http://gelatontology.com/#hydrationBenefit",
@@ -559,32 +595,8 @@
     "comment" : {
       "undefined" : "This class refers to all the health benefits of gelato."
     },
-    "id" : "41"
-  }, {
-    "iri" : "http://gelatontology.com/#FrozenDessertTexture",
-    "baseIri" : "http://gelatontology.com/",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FrozenDessertTexture",
-      "undefined" : "FrozenDessertTexture"
-    },
-    "individuals" : [ {
-      "iri" : "http://gelatontology.com/#frozen",
-      "baseIri" : "http://gelatontology.com/",
-      "labels" : {
-        "IRI-based" : "frozen"
-      }
-    }, {
-      "iri" : "http://gelatontology.com/#semi-frozen",
-      "baseIri" : "http://gelatontology.com/",
-      "labels" : {
-        "IRI-based" : "semi-frozen"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "This class contains instances that characterize the texture of frozen dessert, namely frozen and semi-frozen. The instances are used for the comparison of texture between gelato and ice-cream."
-    },
-    "id" : "46"
+    "id" : "33",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://gelatontology.com/#BasicIngredient",
     "baseIri" : "http://gelatontology.com/",
@@ -632,8 +644,34 @@
     "comment" : {
       "undefined" : "This class includes the basic ingredients to make gelato"
     },
-    "id" : "7",
-    "superClasses" : [ "3" ]
+    "id" : "65",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://gelatontology.com/#FrozenDessertTexture",
+    "baseIri" : "http://gelatontology.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenDessertTexture",
+      "undefined" : "FrozenDessertTexture"
+    },
+    "individuals" : [ {
+      "iri" : "http://gelatontology.com/#frozen",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "frozen"
+      }
+    }, {
+      "iri" : "http://gelatontology.com/#semi-frozen",
+      "baseIri" : "http://gelatontology.com/",
+      "labels" : {
+        "IRI-based" : "semi-frozen"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "This class contains instances that characterize the texture of frozen dessert, namely frozen and semi-frozen. The instances are used for the comparison of texture between gelato and ice-cream."
+    },
+    "id" : "35",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://gelatontology.com/#Ingredient",
     "baseIri" : "http://gelatontology.com/",
@@ -642,11 +680,25 @@
       "IRI-based" : "Ingredient",
       "undefined" : "GelatoIngredient"
     },
-    "subClasses" : [ "7", "2", "54", "4" ],
+    "subClasses" : [ "65", "41", "58", "3" ],
     "comment" : {
       "undefined" : "This class refers to all ingredients that make up gelato."
     },
-    "id" : "3"
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://gelatontology.com/GelatoOntology",
+    "baseIri" : "http://gelatontology.com",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GelatoOntology",
+      "undefined" : "GelatoOntology"
+    },
+    "subClasses" : [ "35", "0", "5", "7", "9", "10", "4", "33", "42" ],
+    "comment" : {
+      "undefined" : "This ontology was built based on a research article on gelato. Its subclasses include gelato, components that constitutes gelato, such as health benefits, nutrients, ingredients, preparation steps, and other frozen desserts that are often compared with gelato, such as ice-cream."
+    },
+    "id" : "1"
   }, {
     "iri" : "http://gelatontology.com/#CountryOfOrigin",
     "baseIri" : "http://gelatontology.com/",
@@ -665,23 +717,58 @@
     "comment" : {
       "undefined" : "This class includes the country of origin of gelato. It has 1 member: Italy."
     },
-    "id" : "39"
+    "id" : "42",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
   } ],
   "property" : [ {
-    "id" : "1",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "6",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "10",
+    "id" : "11",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "19",
+    "id" : "20",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "33",
-    "type" : "owl:allValuesFrom"
+    "id" : "29",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "30",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "31",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "32",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "34",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "36",
     "type" : "owl:someValuesFrom"
@@ -690,24 +777,24 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "38",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "14",
-    "type" : "owl:objectProperty"
+    "id" : "39",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "40",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "42",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "43",
-    "type" : "owl:someValuesFrom"
+    "id" : "15",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "44",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "45",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "46",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "47",
@@ -720,39 +807,33 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "50",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "51",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "52",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "15",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "53",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "18",
-    "type" : "owl:objectProperty"
+    "id" : "54",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "55",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "56",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "57",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "58",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "59",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "60",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "61",
@@ -760,203 +841,291 @@
   }, {
     "id" : "62",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
-    "range" : "3",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1"
-  }, {
-    "range" : "3",
-    "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "6"
-  }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "11",
+    "range" : "12",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "11",
-    "subproperty" : [ "12", "13", "14", "15", "16", "17", "18" ],
+    "domain" : "12",
+    "subproperty" : [ "13", "14", "15", "16", "17", "18", "19" ],
     "attributes" : [ "object", "external" ],
-    "id" : "10"
+    "id" : "11"
   }, {
     "iri" : "http://gelatontology.com/#hasFatPercentage",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "21",
+    "range" : "22",
     "label" : {
       "IRI-based" : "hasFatPercentage"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "undefined" : "This indicates the Milk Fat Percentage"
     },
     "attributes" : [ "datatype" ],
-    "id" : "19"
+    "id" : "20"
   }, {
     "iri" : "http://gelatontology.com/#constitutes",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "30",
+    "range" : "9",
     "label" : {
       "IRI-based" : "constitutes",
       "undefined" : "constitutes"
     },
-    "superproperty" : [ "10" ],
+    "superproperty" : [ "11" ],
+    "domain" : "0",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://gelatontology.com/#constitutes",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "constitutes",
+      "undefined" : "constitutes"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "7",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://gelatontology.com/#constitutes",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "constitutes",
+      "undefined" : "constitutes"
+    },
+    "superproperty" : [ "11" ],
     "domain" : "5",
-    "attributes" : [ "object", "allValues" ],
-    "id" : "33"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "31"
   }, {
     "iri" : "http://gelatontology.com/#constitutes",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "30",
+    "range" : "9",
     "label" : {
       "IRI-based" : "constitutes",
       "undefined" : "constitutes"
     },
-    "superproperty" : [ "10" ],
-    "domain" : "3",
+    "superproperty" : [ "11" ],
+    "domain" : "33",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://gelatontology.com/#hasTexture",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasTexture",
+      "undefined" : "hasTexture"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://gelatontology.com/#constitutes",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "constitutes",
+      "undefined" : "constitutes"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "4",
     "attributes" : [ "object", "someValues" ],
     "id" : "36"
   }, {
-    "iri" : "http://gelatontology.com/#constitutes",
+    "iri" : "http://gelatontology.com/#hasTexture",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "30",
+    "range" : "35",
     "label" : {
-      "IRI-based" : "constitutes",
-      "undefined" : "constitutes"
+      "IRI-based" : "hasTexture",
+      "undefined" : "hasTexture"
     },
-    "superproperty" : [ "10" ],
-    "domain" : "0",
+    "domain" : "10",
     "attributes" : [ "object", "someValues" ],
     "id" : "37"
   }, {
-    "iri" : "http://gelatontology.com/#constitutes",
-    "baseIri" : "http://gelatontology.com/",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "constitutes",
-      "undefined" : "constitutes"
-    },
-    "superproperty" : [ "10" ],
-    "domain" : "8",
-    "attributes" : [ "object", "someValues" ],
+    "range" : "33",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "38"
+  }, {
+    "range" : "4",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "7",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
   }, {
     "iri" : "http://gelatontology.com/#hasOrigin",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "39",
+    "range" : "42",
     "label" : {
       "IRI-based" : "hasOrigin",
       "undefined" : "hasOrigin"
     },
-    "superproperty" : [ "10" ],
-    "domain" : "30",
+    "superproperty" : [ "11" ],
+    "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "14"
+    "id" : "15"
   }, {
-    "iri" : "http://gelatontology.com/#hasBenefit",
-    "baseIri" : "http://gelatontology.com/",
-    "range" : "41",
-    "label" : {
-      "IRI-based" : "hasBenefit",
-      "undefined" : "hasBenefit"
-    },
-    "superproperty" : [ "10" ],
-    "domain" : "30",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "40"
-  }, {
-    "iri" : "http://gelatontology.com/#hasIngredient",
-    "baseIri" : "http://gelatontology.com/",
-    "range" : "3",
-    "label" : {
-      "IRI-based" : "hasIngredient",
-      "undefined" : "hasIngredient"
-    },
-    "superproperty" : [ "10" ],
-    "domain" : "30",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "42"
-  }, {
-    "iri" : "http://gelatontology.com/#hasNutrient",
-    "baseIri" : "http://gelatontology.com/",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "hasNutrient",
-      "undefined" : "hasNutrient"
-    },
-    "superproperty" : [ "10" ],
-    "domain" : "30",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "43"
-  }, {
-    "iri" : "http://gelatontology.com/#hasTextureDifferenceFrom",
-    "baseIri" : "http://gelatontology.com/",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "hasTextureDifferenceFrom",
-      "undefined" : "hasTextureDifferenceFrom"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "This property is used to highlight the difference between ice-cream and gelato in terms of texture."
-    },
-    "attributes" : [ "object", "someValues", "symmetric" ],
+    "range" : "9",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "44"
-  }, {
-    "iri" : "http://gelatontology.com/#hasTexture",
-    "baseIri" : "http://gelatontology.com/",
-    "range" : "46",
-    "label" : {
-      "IRI-based" : "hasTexture",
-      "undefined" : "hasTexture"
-    },
-    "domain" : "30",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "45"
-  }, {
-    "iri" : "http://gelatontology.com/#hasCompositionalDifferenceFrom",
-    "baseIri" : "http://gelatontology.com/",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "hasCompositionalDifferenceFrom",
-      "undefined" : "hasCompositionalDifferenceFrom"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "This property is used to highlight the difference between ice-cream and gelato in terms of composition."
-    },
-    "attributes" : [ "object", "someValues", "symmetric" ],
-    "id" : "47"
   }, {
     "iri" : "http://gelatontology.com/#constitutes",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "30",
+    "range" : "10",
     "label" : {
       "IRI-based" : "constitutes",
       "undefined" : "constitutes"
     },
-    "superproperty" : [ "10" ],
-    "domain" : "41",
+    "superproperty" : [ "11" ],
+    "domain" : "35",
     "attributes" : [ "object", "someValues" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://gelatontology.com/#hasIngredient",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasIngredient",
+      "undefined" : "hasIngredient"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "9",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://gelatontology.com/#hasBenefit",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasBenefit",
+      "undefined" : "hasBenefit"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "9",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://gelatontology.com/#hasCompositionalDifferenceFrom",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasCompositionalDifferenceFrom",
+      "undefined" : "hasCompositionalDifferenceFrom"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "This property is used to highlight the difference between ice-cream and gelato in terms of composition."
+    },
+    "attributes" : [ "object", "symmetric", "someValues" ],
     "id" : "48"
   }, {
-    "iri" : "http://gelatontology.com/#hasTexture",
+    "iri" : "http://gelatontology.com/#hasNutrient",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "46",
+    "range" : "7",
     "label" : {
-      "IRI-based" : "hasTexture",
-      "undefined" : "hasTexture"
+      "IRI-based" : "hasNutrient",
+      "undefined" : "hasNutrient"
     },
-    "domain" : "28",
+    "superproperty" : [ "11" ],
+    "domain" : "9",
     "attributes" : [ "object", "someValues" ],
     "id" : "49"
   }, {
+    "iri" : "http://gelatontology.com/isBasedOn",
+    "baseIri" : "http://gelatontology.com",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isBasedOn"
+    },
+    "domain" : "12",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://gelatontology.com/#hasTextureDifferenceFrom",
+    "baseIri" : "http://gelatontology.com/",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasTextureDifferenceFrom",
+      "undefined" : "hasTextureDifferenceFrom"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "This property is used to highlight the difference between ice-cream and gelato in terms of texture."
+    },
+    "attributes" : [ "object", "symmetric", "someValues" ],
+    "id" : "52"
+  }, {
     "iri" : "http://gelatontology.com/#needsDuration",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "32",
+    "range" : "2",
     "label" : {
       "IRI-based" : "needsDuration",
       "undefined" : "needsDuration"
@@ -966,31 +1135,24 @@
       "undefined" : "This indicates the time needed for certain preparation steps in the making of gelato."
     },
     "attributes" : [ "datatype" ],
-    "id" : "50"
+    "id" : "53"
+  }, {
+    "range" : "9",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
   }, {
     "iri" : "http://gelatontology.com/#constitutes",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "30",
+    "range" : "9",
     "label" : {
       "IRI-based" : "constitutes",
       "undefined" : "constitutes"
     },
-    "superproperty" : [ "10" ],
-    "domain" : "46",
+    "superproperty" : [ "11" ],
+    "domain" : "35",
     "attributes" : [ "object", "someValues" ],
-    "id" : "51"
-  }, {
-    "iri" : "http://gelatontology.com/#constitutes",
-    "baseIri" : "http://gelatontology.com/",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "constitutes",
-      "undefined" : "constitutes"
-    },
-    "superproperty" : [ "10" ],
-    "domain" : "46",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "52"
+    "id" : "55"
   }, {
     "iri" : "http://gelatontology.com/#isPopularFor",
     "baseIri" : "http://gelatontology.com/",
@@ -999,10 +1161,20 @@
       "IRI-based" : "isPopularFor",
       "undefined" : "isPopularFor"
     },
-    "superproperty" : [ "10" ],
-    "domain" : "30",
+    "superproperty" : [ "11" ],
+    "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "15"
+    "id" : "16"
+  }, {
+    "range" : "1",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "1",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
   }, {
     "iri" : "http://gelatontology.com/#hasMSNFPercentage",
     "baseIri" : "http://gelatontology.com/",
@@ -1010,12 +1182,27 @@
     "label" : {
       "IRI-based" : "hasMSNFPercentage"
     },
-    "domain" : "35",
+    "domain" : "28",
     "comment" : {
       "undefined" : "This indicates the milk solid non fat percentage."
     },
     "attributes" : [ "datatype" ],
-    "id" : "53"
+    "id" : "59"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
   }, {
     "iri" : "http://gelatontology.com/#isPreparedThrough",
     "baseIri" : "http://gelatontology.com/",
@@ -1024,14 +1211,39 @@
       "IRI-based" : "isPreparedThrough",
       "undefined" : "isPreparedThrough"
     },
-    "superproperty" : [ "10" ],
-    "domain" : "30",
+    "superproperty" : [ "11" ],
+    "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "18"
+    "id" : "19"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://gelatontology.com/hasAuthor",
+    "baseIri" : "http://gelatontology.com",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasAuthor"
+    },
+    "domain" : "43",
+    "attributes" : [ "object" ],
+    "id" : "68"
   }, {
     "iri" : "http://gelatontology.com/#needsPressure",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "26",
+    "range" : "70",
     "label" : {
       "IRI-based" : "needsPressure",
       "undefined" : "needsPressure"
@@ -1041,37 +1253,37 @@
       "undefined" : "This indicates the pressure needed in certain preparation steps in the making of gelato."
     },
     "attributes" : [ "datatype" ],
-    "id" : "55"
+    "id" : "69"
   }, {
     "iri" : "http://gelatontology.com/#hasTSPercentage",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "23",
+    "range" : "6",
     "label" : {
       "IRI-based" : "hasTSPercentage"
     },
-    "domain" : "29",
+    "domain" : "8",
     "comment" : {
       "undefined" : "This indicates the total solids percentage."
     },
     "attributes" : [ "datatype" ],
-    "id" : "56"
+    "id" : "71"
   }, {
     "iri" : "http://gelatontology.com/#hasSEPercentage",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "22",
+    "range" : "23",
     "label" : {
       "IRI-based" : "hasSEPercentage"
     },
-    "domain" : "34",
+    "domain" : "24",
     "comment" : {
       "undefined" : "This indicates the Stabilizer and Emulsifier Percentage"
     },
     "attributes" : [ "datatype" ],
-    "id" : "57"
+    "id" : "72"
   }, {
     "iri" : "http://gelatontology.com/#needsTemperature",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "25",
+    "range" : "74",
     "label" : {
       "IRI-based" : "needsTemperature",
       "undefined" : "needsTemperature"
@@ -1081,39 +1293,54 @@
       "undefined" : "This indicates the temperature needed during certain preparation steps in the making of gelato."
     },
     "attributes" : [ "datatype" ],
-    "id" : "58"
+    "id" : "73"
+  }, {
+    "range" : "1",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
   }, {
     "iri" : "http://gelatontology.com/#hasSweetenerPercentage",
     "baseIri" : "http://gelatontology.com/",
-    "range" : "24",
+    "range" : "25",
     "label" : {
       "IRI-based" : "hasSweetenerPercentage"
     },
-    "domain" : "31",
+    "domain" : "26",
     "comment" : {
       "undefined" : "This indicates the percentage of sweetener."
     },
     "attributes" : [ "datatype" ],
-    "id" : "59"
+    "id" : "76"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "9",
+    "range" : "78",
     "label" : {
       "IRI-based" : "topDataProperty"
     },
-    "domain" : "11",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "60"
+    "domain" : "12",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "77"
   }, {
-    "range" : "3",
-    "domain" : "4",
+    "range" : "4",
+    "domain" : "41",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "61"
+    "id" : "79"
   }, {
-    "range" : "3",
-    "domain" : "54",
+    "range" : "4",
+    "domain" : "65",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "62"
+    "id" : "80"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "4",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
   } ]
 }

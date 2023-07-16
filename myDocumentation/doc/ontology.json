@@ -31,6 +31,23 @@
 }, {
   "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/isBasedOn"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "http://gelatontology.com/A_review_on_Gelato:_An_Italian_delicacy"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#constitutes"
   } ],
@@ -38,7 +55,7 @@
     "@id" : "http://gelatontology.com/#Gelato"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#constitutes"
@@ -47,7 +64,7 @@
     "@id" : "http://gelatontology.com/#Icecream"
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#hasBenefit"
@@ -56,7 +73,7 @@
     "@id" : "http://gelatontology.com/#HealthBenefit"
   } ]
 }, {
-  "@id" : "_:genid19",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#hasCompositionalDifferenceFrom"
@@ -65,7 +82,7 @@
     "@id" : "http://gelatontology.com/#Icecream"
   } ]
 }, {
-  "@id" : "_:genid20",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#hasIngredient"
@@ -74,7 +91,7 @@
     "@id" : "http://gelatontology.com/#Ingredient"
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#hasNutrient"
@@ -83,7 +100,7 @@
     "@id" : "http://gelatontology.com/#Nutrient"
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#hasTexture"
@@ -92,16 +109,16 @@
     "@id" : "http://gelatontology.com/#FrozenDessertTexture"
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#hasTexture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid24"
+    "@id" : "_:genid27"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -109,7 +126,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#hasTextureDifferenceFrom"
@@ -118,16 +135,16 @@
     "@id" : "http://gelatontology.com/#Icecream"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid28"
+    "@id" : "_:genid31"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#hasOrigin"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -135,84 +152,47 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@value" : "4-8%"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasFatPercentage"
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@value" : "9-12%"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasMSNFPercentage"
-  } ]
-}, {
-  "@id" : "_:genid32",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@value" : "0.5%"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasSEPercentage"
-  } ]
-}, {
   "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@value" : "15-24%"
-  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasSweetenerPercentage"
+    "@id" : "http://gelatontology.com/#hasFatPercentage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid34"
   } ]
 }, {
   "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@value" : "32-42%"
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasTSPercentage"
-  } ]
-}, {
-  "@id" : "_:genid35",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#constitutes"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://gelatontology.com/#Gelato"
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid38"
+    }, {
+      "@id" : "_:genid36"
+    } ]
   } ]
 }, {
   "@id" : "_:genid36",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasTexture"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://gelatontology.com/#FrozenDessertTexture"
-  } ]
-}, {
-  "@id" : "_:genid37",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasTexture"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid38"
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "8%"
   } ]
 }, {
   "@id" : "_:genid38",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@id" : "http://gelatontology.com/#frozen"
-    } ]
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4%"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#hasMSNFPercentage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid40"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -226,51 +206,109 @@
   } ]
 }, {
   "@id" : "_:genid40",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@value" : "8-10%"
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasFatPercentage"
-  } ]
-}, {
-  "@id" : "_:genid41",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@value" : "10-12%"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasMSNFPercentage"
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid44"
+    }, {
+      "@id" : "_:genid42"
+    } ]
   } ]
 }, {
   "@id" : "_:genid42",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "12%"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "9%"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#hasSweetenerPercentage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid46"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid50"
+    }, {
+      "@id" : "_:genid48"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "24%"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "15%"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#hasTSPercentage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid52"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid56"
+    }, {
+      "@id" : "_:genid54"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "42%"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "32%"
+  } ]
+}, {
+  "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
     "@value" : "0.4%"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#hasSEPercentage"
   } ]
 }, {
-  "@id" : "_:genid43",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@value" : "15-17%"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasSweetenerPercentage"
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@value" : "32-36%"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#hasTSPercentage"
-  } ]
-}, {
-  "@id" : "_:genid45",
+  "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://gelatontology.com/#constitutes"
@@ -279,31 +317,73 @@
     "@id" : "http://gelatontology.com/#Gelato"
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#constitutes"
+    "@id" : "http://gelatontology.com/#hasTexture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://gelatontology.com/#Gelato"
+    "@id" : "http://gelatontology.com/#FrozenDessertTexture"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#constitutes"
+    "@id" : "http://gelatontology.com/#hasTexture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://gelatontology.com/#Gelato"
+    "@id" : "_:genid61"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "http://gelatontology.com/#frozen"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://gelatontology.com/#Gelato"
-  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://gelatontology.com/#constitutes"
+    "@id" : "http://gelatontology.com/#hasFatPercentage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid64"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid68"
+    }, {
+      "@id" : "_:genid66"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "10%"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "8%"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#hasMSNFPercentage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid70"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -314,6 +394,145 @@
     }, {
       "@id" : "http://gelatontology.com/#Icecream"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid74"
+    }, {
+      "@id" : "_:genid72"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "12%"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "10%"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#hasSweetenerPercentage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid76"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid80"
+    }, {
+      "@id" : "_:genid78"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "17%"
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "15%"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#hasTSPercentage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid82"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid86"
+    }, {
+      "@id" : "_:genid84"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "36%"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "32%"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "0.4%"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#hasSEPercentage"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#constitutes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#constitutes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#constitutes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://gelatontology.com/#constitutes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
   } ]
 }, {
   "@id" : "http://gelatontology.com/",
@@ -350,6 +569,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "GelatoCountryOfOrigin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://gelatontology.com/GelatoOntology"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#FrozenDessertTexture",
@@ -361,9 +586,14 @@
     "@value" : "FrozenDessertTexture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid16"
+    "@id" : "http://gelatontology.com/GelatoOntology"
   }, {
-    "@id" : "_:genid17"
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://gelatontology.com/#Gelato"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#Gelato",
@@ -372,11 +602,7 @@
     "@value" : "Gelato"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid18"
-  }, {
-    "@id" : "_:genid19"
-  }, {
-    "@id" : "_:genid20"
+    "@id" : "http://gelatontology.com/GelatoOntology"
   }, {
     "@id" : "_:genid21"
   }, {
@@ -384,19 +610,43 @@
   }, {
     "@id" : "_:genid23"
   }, {
+    "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
+  }, {
     "@id" : "_:genid26"
   }, {
-    "@id" : "_:genid27"
+    "@id" : "_:genid29"
   }, {
     "@id" : "_:genid30"
   }, {
-    "@id" : "_:genid31"
-  }, {
-    "@id" : "_:genid32"
-  }, {
     "@id" : "_:genid33"
   }, {
-    "@id" : "_:genid34"
+    "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid45"
+  }, {
+    "@id" : "_:genid51"
+  }, {
+    "@id" : "_:genid57"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://gelatontology.com/#HealthBenefit"
+  }, {
+    "@id" : "http://gelatontology.com/#Ingredient"
+  }, {
+    "@id" : "http://gelatontology.com/#Nutrient"
+  }, {
+    "@id" : "http://gelatontology.com/#PreparationStep"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/#GelatoResearchArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class includes research articles about gelato as instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GelatoResearchArticle"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#HealthBenefit",
@@ -408,7 +658,9 @@
     "@value" : "GelatoHealthBenefit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid35"
+    "@id" : "http://gelatontology.com/GelatoOntology"
+  }, {
+    "@id" : "_:genid58"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#Icecream",
@@ -420,19 +672,21 @@
     "@value" : "Ice-cream"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid36"
+    "@id" : "http://gelatontology.com/GelatoOntology"
   }, {
-    "@id" : "_:genid37"
+    "@id" : "_:genid59"
   }, {
-    "@id" : "_:genid40"
+    "@id" : "_:genid60"
   }, {
-    "@id" : "_:genid41"
+    "@id" : "_:genid63"
   }, {
-    "@id" : "_:genid42"
+    "@id" : "_:genid69"
   }, {
-    "@id" : "_:genid43"
+    "@id" : "_:genid75"
   }, {
-    "@id" : "_:genid44"
+    "@id" : "_:genid81"
+  }, {
+    "@id" : "_:genid87"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#Ingredient",
@@ -444,7 +698,9 @@
     "@value" : "GelatoIngredient"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid45"
+    "@id" : "http://gelatontology.com/GelatoOntology"
+  }, {
+    "@id" : "_:genid88"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#Italy",
@@ -471,7 +727,9 @@
     "@value" : "GelatoNutrient"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid46"
+    "@id" : "http://gelatontology.com/GelatoOntology"
+  }, {
+    "@id" : "_:genid89"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#PopularFlavor",
@@ -483,7 +741,9 @@
     "@value" : "GelatoPopularFlavor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid47"
+    "@id" : "http://gelatontology.com/GelatoOntology"
+  }, {
+    "@id" : "_:genid90"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#PreparationStep",
@@ -495,7 +755,9 @@
     "@value" : "GelatoPreparationStep"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid48"
+    "@id" : "http://gelatontology.com/GelatoOntology"
+  }, {
+    "@id" : "_:genid91"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#Stabilizer",
@@ -694,6 +956,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#hasIngredient",
@@ -712,6 +977,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#hasNutrient",
@@ -745,6 +1013,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#hasSweetenerPercentage",
@@ -754,6 +1025,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#hasTSPercentage",
@@ -763,6 +1037,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://gelatontology.com/#hasTexture",
@@ -866,6 +1143,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "needsDuration"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
@@ -881,6 +1161,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "needsPressure"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
@@ -895,6 +1178,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "needsTemperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
@@ -977,4 +1263,56 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "vitaminCBenefit"
   } ]
+}, {
+  "@id" : "http://gelatontology.com/A_review_on_Gelato:_An_Italian_delicacy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/#GelatoResearchArticle" ],
+  "http://gelatontology.com/hasAuthor" : [ {
+    "@id" : "http://gelatontology.com/Rekha_Rani"
+  }, {
+    "@id" : "http://gelatontology.com/Sarang_Kanse"
+  }, {
+    "@id" : "http://gelatontology.com/Shuvam_Shingh"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/GelatoOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology was built based on a research article on gelato. Its subclasses include gelato, components that constitutes gelato, such as health benefits, nutrients, ingredients, preparation steps, and other frozen desserts that are often compared with gelato, such as ice-cream."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GelatoOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/GelatoResearchAuthor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class includes instances that are authors of research articles on gelato."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GelatoResearchAuthor"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/Rekha_Rani",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/GelatoResearchAuthor" ]
+}, {
+  "@id" : "http://gelatontology.com/Sarang_Kanse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/GelatoResearchAuthor" ]
+}, {
+  "@id" : "http://gelatontology.com/Shuvam_Shingh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://gelatontology.com/GelatoResearchAuthor" ]
+}, {
+  "@id" : "http://gelatontology.com/hasAuthor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://gelatontology.com/#GelatoResearchArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://gelatontology.com/GelatoResearchAuthor"
+  } ]
+}, {
+  "@id" : "http://gelatontology.com/isBasedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]
