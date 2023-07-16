@@ -5,6 +5,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:gelato="http://gelatontology.com/#gelato%3"
      xmlns:gelatontology="http://gelatontology.com/#"
@@ -21,6 +22,21 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://gelatontology.com/hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/hasAuthor">
+        <rdfs:domain rdf:resource="http://gelatontology.com/#GelatoResearchArticle"/>
+        <rdfs:range rdf:resource="http://gelatontology.com/GelatoResearchAuthor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gelatontology.com/isBasedOn -->
+
+    <owl:ObjectProperty rdf:about="http://gelatontology.com/isBasedOn"/>
     
 
 
@@ -143,6 +159,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>This indicates the Milk Fat Percentage</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -159,6 +176,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>This indicates the milk solid non fat percentage.</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -175,6 +193,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>This indicates the Stabilizer and Emulsifier Percentage</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -191,6 +210,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment>This indicates the percentage of sweetener.</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -207,6 +227,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>This indicates the total solids percentage.</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -217,6 +238,7 @@
     <owl:DatatypeProperty rdf:about="http://gelatontology.com/#needsDuration">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>This indicates the time needed for certain preparation steps in the making of gelato.</rdfs:comment>
         <rdfs:label>needsDuration</rdfs:label>
     </owl:DatatypeProperty>
@@ -228,6 +250,7 @@
     <owl:DatatypeProperty rdf:about="http://gelatontology.com/#needsPressure">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>This indicates the pressure needed in certain preparation steps in the making of gelato.</rdfs:comment>
         <rdfs:label>needsPressure</rdfs:label>
     </owl:DatatypeProperty>
@@ -239,6 +262,7 @@
     <owl:DatatypeProperty rdf:about="http://gelatontology.com/#needsTemperature">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://gelatontology.com/#PreparationStep"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>This indicates the temperature needed during certain preparation steps in the making of gelato.</rdfs:comment>
         <rdfs:label>needsTemperature</rdfs:label>
     </owl:DatatypeProperty>
@@ -253,6 +277,36 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://gelatontology.com/GelatoOntology -->
+
+    <owl:Class rdf:about="http://gelatontology.com/GelatoOntology">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/isBasedOn"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://gelatontology.com/A_review_on_Gelato:_An_Italian_delicacy"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This ontology was built based on a research article on gelato. Its subclasses include gelato, components that constitutes gelato, such as health benefits, nutrients, ingredients, preparation steps, and other frozen desserts that are often compared with gelato, such as ice-cream.</rdfs:comment>
+        <rdfs:label>GelatoOntology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/GelatoResearchAuthor -->
+
+    <owl:Class rdf:about="http://gelatontology.com/GelatoResearchAuthor">
+        <rdfs:comment>This class includes instances that are authors of research articles on gelato.</rdfs:comment>
+        <rdfs:label>GelatoResearchAuthor</rdfs:label>
+    </owl:Class>
     
 
 
@@ -279,6 +333,8 @@
     <!-- http://gelatontology.com/#CountryOfOrigin -->
 
     <owl:Class rdf:about="http://gelatontology.com/#CountryOfOrigin">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/GelatoOntology"/>
+        <owl:disjointWith rdf:resource="http://gelatontology.com/#Gelato"/>
         <rdfs:comment>This class includes the country of origin of gelato. It has 1 member: Italy.</rdfs:comment>
         <rdfs:label>GelatoCountryOfOrigin</rdfs:label>
     </owl:Class>
@@ -288,6 +344,7 @@
     <!-- http://gelatontology.com/#FrozenDessertTexture -->
 
     <owl:Class rdf:about="http://gelatontology.com/#FrozenDessertTexture">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/GelatoOntology"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
@@ -300,6 +357,7 @@
                 <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Icecream"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://gelatontology.com/#Gelato"/>
         <rdfs:comment>This class contains instances that characterize the texture of frozen dessert, namely frozen and semi-frozen. The instances are used for the comparison of texture between gelato and ice-cream.</rdfs:comment>
         <rdfs:label>FrozenDessertTexture</rdfs:label>
     </owl:Class>
@@ -309,6 +367,7 @@
     <!-- http://gelatontology.com/#Gelato -->
 
     <owl:Class rdf:about="http://gelatontology.com/#Gelato">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/GelatoOntology"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasBenefit"/>
@@ -372,34 +431,95 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasFatPercentage"/>
-                <owl:hasValue>4-8%</owl:hasValue>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4%</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8%</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasMSNFPercentage"/>
-                <owl:hasValue>9-12%</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/#hasSEPercentage"/>
-                <owl:hasValue>0.5%</owl:hasValue>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9%</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12%</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasSweetenerPercentage"/>
-                <owl:hasValue>15-24%</owl:hasValue>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15%</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24%</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasTSPercentage"/>
-                <owl:hasValue>32-42%</owl:hasValue>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32%</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">42%</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasSEPercentage"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4%</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://gelatontology.com/#HealthBenefit"/>
+        <owl:disjointWith rdf:resource="http://gelatontology.com/#Ingredient"/>
+        <owl:disjointWith rdf:resource="http://gelatontology.com/#Nutrient"/>
+        <owl:disjointWith rdf:resource="http://gelatontology.com/#PreparationStep"/>
         <rdfs:label>Gelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://gelatontology.com/#GelatoResearchArticle -->
+
+    <owl:Class rdf:about="http://gelatontology.com/#GelatoResearchArticle">
+        <rdfs:comment>This class includes research articles about gelato as instances.</rdfs:comment>
+        <rdfs:label>GelatoResearchArticle</rdfs:label>
     </owl:Class>
     
 
@@ -407,6 +527,7 @@
     <!-- http://gelatontology.com/#HealthBenefit -->
 
     <owl:Class rdf:about="http://gelatontology.com/#HealthBenefit">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/GelatoOntology"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
@@ -422,6 +543,7 @@
     <!-- http://gelatontology.com/#Icecream -->
 
     <owl:Class rdf:about="http://gelatontology.com/#Icecream">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/GelatoOntology"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasTexture"/>
@@ -443,31 +565,79 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasFatPercentage"/>
-                <owl:hasValue>8-10%</owl:hasValue>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8%</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10%</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasMSNFPercentage"/>
-                <owl:hasValue>10-12%</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gelatontology.com/#hasSEPercentage"/>
-                <owl:hasValue>0.4%</owl:hasValue>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10%</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12%</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasSweetenerPercentage"/>
-                <owl:hasValue>15-17%</owl:hasValue>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15%</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17%</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#hasTSPercentage"/>
-                <owl:hasValue>32-36%</owl:hasValue>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32%</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36%</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gelatontology.com/#hasSEPercentage"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4%</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Ice-cream is mentioned in the article as an entity that is often compared to gelato, but has a completely different nutritional and compositional profiles as well as texture.</rdfs:comment>
@@ -479,6 +649,7 @@
     <!-- http://gelatontology.com/#Ingredient -->
 
     <owl:Class rdf:about="http://gelatontology.com/#Ingredient">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/GelatoOntology"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
@@ -504,6 +675,7 @@
     <!-- http://gelatontology.com/#Nutrient -->
 
     <owl:Class rdf:about="http://gelatontology.com/#Nutrient">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/GelatoOntology"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
@@ -519,6 +691,7 @@
     <!-- http://gelatontology.com/#PopularFlavor -->
 
     <owl:Class rdf:about="http://gelatontology.com/#PopularFlavor">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/GelatoOntology"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
@@ -534,10 +707,11 @@
     <!-- http://gelatontology.com/#PreparationStep -->
 
     <owl:Class rdf:about="http://gelatontology.com/#PreparationStep">
+        <rdfs:subClassOf rdf:resource="http://gelatontology.com/GelatoOntology"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gelatontology.com/#constitutes"/>
-                <owl:allValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
+                <owl:someValuesFrom rdf:resource="http://gelatontology.com/#Gelato"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>This includes the basic preparation steps for the making of gelato.</rdfs:comment>
@@ -564,6 +738,30 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://gelatontology.com/Rekha_Rani -->
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/Rekha_Rani">
+        <rdf:type rdf:resource="http://gelatontology.com/GelatoResearchAuthor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/Sarang_Kanse -->
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/Sarang_Kanse">
+        <rdf:type rdf:resource="http://gelatontology.com/GelatoResearchAuthor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/Shuvam_Shingh -->
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/Shuvam_Shingh">
+        <rdf:type rdf:resource="http://gelatontology.com/GelatoResearchAuthor"/>
+    </owl:NamedIndividual>
     
 
 
@@ -970,6 +1168,17 @@
     <owl:NamedIndividual rdf:about="http://gelatontology.com/#vitaminCBenefit">
         <rdf:type rdf:resource="http://gelatontology.com/#HealthBenefit"/>
         <rdfs:label>vitaminCBenefit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gelatontology.com/A_review_on_Gelato:_An_Italian_delicacy -->
+
+    <owl:NamedIndividual rdf:about="http://gelatontology.com/A_review_on_Gelato:_An_Italian_delicacy">
+        <rdf:type rdf:resource="http://gelatontology.com/#GelatoResearchArticle"/>
+        <gelatontology1:hasAuthor rdf:resource="http://gelatontology.com/Rekha_Rani"/>
+        <gelatontology1:hasAuthor rdf:resource="http://gelatontology.com/Sarang_Kanse"/>
+        <gelatontology1:hasAuthor rdf:resource="http://gelatontology.com/Shuvam_Shingh"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
