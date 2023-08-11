@@ -182,6 +182,7 @@
       <div  class="text-center">
       <a class="btn-book-a-table" href="assets/img/fred_graph.png" target="_blank">Click here for fullview</a></div>
     </div>
+    <p>By looking at the Fred's output we could have an intial view on the ontology from a different perspective. The graph automatically generated of the selected paragraph gave us an idea of the complex amount of knowledge we could extract from the article. Additionally it reused few dbpedia classes that we could also integrate in our work.</p>
   </div>
 </div>
 </section>
@@ -194,7 +195,94 @@
   </div>
   <div class="row gx-5">
     <div class="col-md-8">
-      <p>...</p>
+      <p>In this stage we metodically read the text, looking for the key concepts, understanding their meaining, roles and relations.</p>
+      <img src="assets/img/KE_sample.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="200">
+      <p><b>Classes</b> and <b>Subclasses</b> came out from this reverse engegneering process.</p>
+    <p>
+      The following key concepts were taken from different sections of the article:
+      <ul>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#Country">CountryOfOrigin</a>: This class includes countries of origin as instances. One instance in this class is Italy, which is the country of origin of gelato.
+</li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#Texture">FrozenDessertTexture</a>: This class contains instances that characterize the texture of frozen dessert, namely frozen and semi-frozen. The instances are used for the comparison of texture between gelato and ice-cream.
+</li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#Gelato">Gelato</a>: This class refers to all individuals that are instances of gelato
+</li>
+<li>
+  <a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#HealthBenefit">GelatoHealthBenefit</a>: This class refers to all the health benefits of gelato. 
+  <ol>It includes:
+    <li><a href="https://www.notion.so/Gelatontology-46456c54f3eb427889bc2c6899da855e?pvs=21">antioxidantBenefit</a>,</li>
+    <li><a href="https://www.notion.so/Gelatontology-46456c54f3eb427889bc2c6899da855e?pvs=21">calciumSourceBenefit</a>,</li>
+    <li><a href="https://www.notion.so/Gelatontology-46456c54f3eb427889bc2c6899da855e?pvs=21">digestiveHealthBenefit</a>,</li>
+    <li><a href="https://www.notion.so/Gelatontology-46456c54f3eb427889bc2c6899da855e?pvs=21">hydrationBenefit</a>,</li>
+    <li><a href="https://www.notion.so/Gelatontology-46456c54f3eb427889bc2c6899da855e?pvs=21">vitaminCBenefit</a>.</li>
+  </ol>
+  </li>
+<li>
+<a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#Ingredient">GelatoIngredient</a>: This class refers to all ingredients that make up gelato, including 4 subclasses
+<ol>
+<li>
+<a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#AlternativeSweetener">AlternativeSweetener</a>: This sub-class includes members such as
+<ul>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#erythritol">erythritol</a>,</li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#honey">honey</a>,</li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#trehalose">trehalose</a></li>
+</ul> 
+</li>
+<li>
+<a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#BasicIngredient">BasicIngredient</a>: This subclass includes members such as 
+<ul>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#eggYolk">eggYolk</a></li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#freshCream">freshCream</a>, </li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#milk">milk</a>, </li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#skimmedMilkPowder">skimmedMilkPowder</a>, </li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#sugar">sugar</a>.</li>
+</ul>
+</li>
+<li>
+<a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#NaturalFlavor">NaturalFlavor]</a>: This subclass includes members such as  
+<ul>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#alcohol">alcohol</a>, </li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#cocoaNib">cocoa nib</a>, </li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#cocoaPowder">cocoa powder</a>, </li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#fruit">fruit</a>, </li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#spice">spice</a>.</li>
+</ul>
+</li>
+<li>
+<a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#Stabilizer">Stabilizer</a>: This subclass refers to stabilizers usually used in the making of gelato. Members included are 
+<ul>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#carrageenan">carrageenan</a>, </li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#guarGum">guarGum</a>, </li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#locustBeanGum">locustBeanGum</a>, </li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#pectin">pectin</a>. </li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+  
+    <a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#Nutrient">GelatoNutrient</a>: This class refers to the nutrients in the nutritional profile often featured for gelato. It includes members such as 
+    <ul>
+    <li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#antioxidant">antioxidant</a>, </li>
+        <li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#phenolicCompound">phenolicCompound</a>, </li>
+          <li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#vitaminC">vitaminC</a>.</li>
+</ul>
+</li>
+<li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#PopularFlavor">GelatoPopularFlavor</a>: This class refers to the popular flavors of gelato. It includes
+  <ul>
+    <li><a href="">banana</a></li>
+    <li><a href="">chili</a></li>
+    <li><a href="">chocolate</a></li>
+    <li><a href="">custard</a></li>
+    <li><a href="">darkChocolate</a></li>
+    <li><a href="">lemon</a></li>
+    <li><a href="">peach</a></li>
+    <li><a href="">strawberry</a></li>
+  </ul>
+  <li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#PreparationStep">GelatoPreparationStep</a> 
+    <li><a href="https://lengtvan.github.io/gelateria/myDocumentation/doc/index-en.html#Ice-cream">ice cream</a>
+</ul>    
+</p>
     </div>
   <div class="col-md-4">
     <img src="assets/img/lecka.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="200">
