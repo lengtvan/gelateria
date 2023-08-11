@@ -56,7 +56,7 @@
           <li><a href="index.html#why-us">Competency Questions</a></li>
           <li><a href="index.html#menu">Sparql Query</a></li>
           <li><a href="index.html#testimonials">Knowledge Graph</a></li>
-          <li><a href="index.htmlmyDocumentation/index-en.html" target="_blank">Ontology</a></li>
+          <li><a href="myDocumentation/doc/index-en.html" target="_blank">Ontology</a></li>
           <li><a href="index.html#chefs">The Team</a></li>
           
         </ul>
@@ -318,7 +318,21 @@
     <p>With our basic abstract data extraceted from the artice we could start our model in Protégé. 
       Starting from the class hierarchy we could easuly integrate Object and Data property.
     </p>
-  </div>
+      <p>The ontology is available in multiple serialization formats, including JSON-LD, RDF/XML, N-Triples, and TTL. It is also visualized using WebVowl, allowing users to explore and understand the ontology's structure and relationships visually.</p>
+    
+      <p>The ontology is built upon various namespaces, including <code>gelatontology</code>, <code>owl</code>, <code>rdf</code>, <code>xsd</code>, and <code>rdfs</code>, each serving a specific purpose in defining and describing the ontology's elements.</p>
+      
+      <h2>Key Concepts in the Ontology:</h2>
+      <ul>
+          <li>Classes: The ontology defines several classes to categorize different aspects of gelato, such as <code>AlternativeSweetener</code>, <code>BasicIngredient</code>, <code>FrozenDessertTexture</code>, <code>Gelato</code>, <code>GelatoCountryOfOrigin</code>, <code>GelatoHealthBenefit</code>, <code>GelatoIngredient</code>, <code>GelatoNutrient</code>, <code>GelatoOntology</code>, <code>GelatoPopularFlavor</code>, <code>GelatoPreparationStep</code>, <code>GelatoResearchArticle</code>, <code>GelatoResearchAuthor</code>, <code>Ice-cream</code>, <code>NaturalFlavor</code>, and <code>Stabilizer</code>.</li>
+          <li>Object Properties: The ontology uses object properties to establish relationships between classes, such as <code>constitutes</code>, <code>hasAuthor</code>, <code>hasBenefit</code>, <code>hasCompositionalDifferenceFrom</code>, <code>hasIngredient</code>, <code>hasNutrient</code>, <code>hasOrigin</code>, <code>hasTexture</code>, <code>hasTextureDifferenceFrom</code>, <code>isPopularFor</code>, and <code>isPreparedThrough</code>.</li>
+          <li>Data Properties: Data properties are employed to provide specific data values for individuals, such as <code>hasFatPercentage</code>, <code>hasMSNFPercentage</code>, <code>hasSEPercentage</code>, <code>hasSweetenerPercentage</code>, <code>hasTSPercentage</code>, <code>needsDuration</code>, <code>needsPressure</code>, and <code>needsTemperature</code>.</li>
+          <li>Named Individuals: The ontology defines various named individuals, representing specific instances or examples, such as <code>a review on gelato: an Italian delicacy</code>, <code>banana</code>, <code>chocolate</code>, <code>lemon</code>, <code>Italy</code>, and more.</li>
+      </ul>
+      
+      <p>The ontology's structure is described in a detailed manner, providing information about each class, object property, data property, and named individual. The relationships between classes are elaborated upon, allowing for a comprehensive understanding of how different elements within the ontology are interconnected.</p>
+      
+    </div>
 </div>
 </section>
 <!-- End Third keypoint -->
@@ -330,7 +344,48 @@
   </div>
   <div class="row gx-5">
     <div class="col-md-8">
-      <p>...</p>
+      <p><strong>Testing Ontology with Apache Jena Fuseki</strong></p>
+
+      <p><strong>Step 1: Setup and Installation</strong></p>
+      <p>Download and install Apache Jena Fuseki from the official website.</p>
+      <p>Start the Fuseki server by running the appropriate command for your operating system.</p>
+  
+      <p><strong>Step 2: Upload the Ontology</strong></p>
+      <p>Create a new dataset in Fuseki to hold your ontology's RDF data. Load the ontology RDF data into the dataset.</p>
+  
+      <p><strong>Step 3: Access the Fuseki Web Interface</strong></p>
+      <p>Open a web browser and navigate to the Fuseki web interface (usually at <a
+              href="http://localhost:3030">http://localhost:3030</a>).</p>
+      <p>Choose the dataset where you loaded the ontology to access the SPARQL query interface.</p>
+  
+      <p><strong>Step 4: Formulate a Simple Query</strong></p>
+      <p>Start by formulating a simple SPARQL query to retrieve basic information from the ontology. For example, you can
+          retrieve a list of gelato flavors.</p>
+  
+      <p><strong>Step 5: Execute the Query</strong></p>
+      <p>Click the "Run" button or its equivalent to execute the SPARQL query against the ontology data in the dataset.</p>
+      <p>The query results will be displayed in a tabular format on the web interface.</p>
+  
+      <p><strong>Step 6: Review the Results</strong></p>
+      <p>Examine the query results to ensure that you are retrieving the expected information from the ontology. The
+          results will include URIs and possibly literals, depending on your query.</p>
+  
+      <p><strong>Step 7: Refine and Extend the Query</strong></p>
+      <p>Modify the query to retrieve more specific or detailed information from the ontology. You can add additional
+          clauses to the WHERE block to navigate relationships and properties in the ontology.</p>
+  
+      <p><strong>Step 8: Exporting and Saving Results</strong></p>
+      <p>You can often export the query results in various formats, such as JSON or CSV. This is useful for further
+          analysis or documentation.</p>
+  
+      <p><strong>Step 9: Iterate and Learn</strong></p>
+      <p>As you become more familiar with SPARQL and the Fuseki interface, you can iterate on your queries to retrieve
+          more nuanced and insightful information from the ontology.</p>
+  
+      <p><strong>Step 10: Advanced Features (Optional)</strong></p>
+      <p>Fuseki offers advanced features like updating and managing data, security configurations, and customizing the
+          server behavior. You can explore these features as you gain more experience.</p>
+  
     </div>
   <div class="col-md-4">
     <img src="assets/img/gelato_1280.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="200">
